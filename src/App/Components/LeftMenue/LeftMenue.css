@@ -1,0 +1,64 @@
+.LeftMenue{
+    width: 15%;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    background-color: var(--box-color);
+    padding: 20px;
+}
+.LeftMenue__Title{
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.LeftMenue__Title__Inner-Text{
+    color: var(--cold-blue-color);
+}
+
+.PhoneStyle{
+    flex-direction: row;
+    width: 100%;
+    height: 50px;
+    position: unset;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width:1473px) {
+    .LeftMenue__Title{
+        font-size: 25px;
+    }
+}
+@media only screen and (max-width:1272px) {
+    .LeftMenue__Title{
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width:1071px) {
+    .LeftMenue__Title{
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width:870px) {
+    .LeftMenue__Title{
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width:750px) {
+    .LeftMenue__Title{
+         font-size: 10px;
+        }
+    }
+
+@media only screen and (max-width:500px) {
+    .LeftMenue__Title{
+        display: none;
+    }
+}

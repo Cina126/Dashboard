@@ -1,0 +1,17 @@
+.Exam{
+    width: 40%;
+    height: 200px;
+    background-color: red;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 5px;
+    gap: 5px;
+}
+.Exam>div{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+}

@@ -1,0 +1,13 @@
+.Folowers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Folowers__Text{
+    font-size: 16px;
+    font-weight: bold;
+}
+.Folowers__Value{
+    color: gray;
+}

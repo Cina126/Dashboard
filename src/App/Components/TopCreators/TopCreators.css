@@ -1,0 +1,35 @@
+.TopCreators{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.TopCreators>:is(span , div){
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+}
+.TopCreators>progress{
+    width: 30%;
+    height: 10px;
+    accent-color: var(--cold-blue-color);
+}
+.TopCreators>div>img{
+    width: 75px;
+    height: 75%;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width : 1105px) {
+    .TopCreators>div>img{
+        width: 50px;
+    }
+    .TopCreators>span{
+        font-size: 12px;
+    }
+}
