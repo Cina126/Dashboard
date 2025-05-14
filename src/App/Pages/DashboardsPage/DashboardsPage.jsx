@@ -11,7 +11,6 @@ import LineCharts from '../../Components/LineCharts/LineCharts';
 import BarCharts from '../../Components/BarCharts/BarCharts';
 import PieCharts from './../../Components/PieCharts/PieCharts';
 import BrushCharts from './../../Components/BrushCharts/BrushCharts';
-import TodoList from './../../Components/TodoList/TodoList';
 // end imports componenets ------------------------------------------------------------------------------------------------------------------------------------
 
 // start import icons ------------------------------------------------------------------------------------------------------------------------------------
@@ -76,7 +75,6 @@ export default function DashboardsPage() {
 
                 <div className='DashboardsPage__Right-Side__Third-Line-Charts'>
                     <div className='DashboardsPage__Right-Side__Third-Line-Charts__Brush-Chart'><BrushCharts></BrushCharts></div>
-                    <div className='DashboardsPage__Right-Side__Third-Line-Charts__TodoList'><TodoList></TodoList></div>
                 </div>
 
             </div>

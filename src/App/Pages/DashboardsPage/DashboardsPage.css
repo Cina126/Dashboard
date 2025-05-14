@@ -38,7 +38,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 2%;
-    row-gap: 20px;
+    row-gap: 10px;
 }
 .DashboardsPage__Right-Side__First-Line-Charts__Month{
     width: 49%;
@@ -159,7 +159,7 @@
 }
 
 .DashboardsPage__Right-Side__Third-Line-Charts__Brush-Chart{
-    width: 49%;
+    width: 100%;
     height: 350px;
     background-color: var(--box-color);
     border-radius: 20px;
@@ -181,7 +181,7 @@
     flex-direction: column;
     overflow: auto;
 }
-/* strat first line boxes -------------------------------------------------------------------------------------------------------------------- */
+/* strat first line boxes -------------------------------------------------------------------------------------------------------------------------------------- */
 @media only screen and (max-width : 1000px) {
     .DashboardsPage__Right-Side__First-Line-Charts__Month__Left-Details__Title{
         font-size: 8px;
@@ -279,9 +279,9 @@
         font-size: 14px;
     }
 }
-/* end first line boxes -------------------------------------------------------------------------------------------------------------------- */
+/* end first line boxes -------------------------------------------------------------------------------------------------------------------------------------- */
 
-/* start second line boxes -------------------------------------------------------------------------------------------------------------------- */
+/* start second line boxes -------------------------------------------------------------------------------------------------------------------------------------- */
 @media only screen and (max-width:1278px) {
     .DashboardsPage__Right-Side__Second-Line-Charts__Check-Table,
     .DashboardsPage__Right-Side__Second-Line-Charts__Pie
@@ -297,25 +297,4 @@
     }
 }
 
-/* end second line boxes -------------------------------------------------------------------------------------------------------------------- */
-
-/* start third line boxes -------------------------------------------------------------------------------------------------------------------- */
-@media only screen and (max-width : 600px) {
-    .DashboardsPage__Right-Side__Third-Line-Charts__Brush-Chart,
-    .DashboardsPage__Right-Side__Third-Line-Charts__TodoList
-    {
-        width: 100%;
-    }
-}
-
-/* end third line boxes -------------------------------------------------------------------------------------------------------------------- */
-
-@media only screen and (max-width : 500px) {
-    .DashboardsPage__Right-Side,
-    .DashboardsPage__Right-Side__Stocks,
-    .DashboardsPage__Right-Side__First-Line-Charts,
-    .DashboardsPage__Right-Side__Second-Line-Charts,
-    .DashboardsPage__Right-Side__Third-Line-Charts{
-       row-gap: 10px;
-    }
-}
+/* end second line boxes -------------------------------------------------------------------------------------------------------------------------------------- */

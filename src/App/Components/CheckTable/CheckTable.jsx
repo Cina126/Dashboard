@@ -23,7 +23,7 @@ const columns = [
 ];
 
 const rows = [
-  { id: 1, lastName: 'Snow', firstName: 'Jon', age: 35 },
+  { id: 1, lastName: 'Market', firstName: 'Jon', age: 35 },
   { id: 2, lastName: 'Lannister', firstName: 'Cersei', age: 42 },
   { id: 3, lastName: 'Lannister', firstName: 'Jaime', age: 45 },
   { id: 4, lastName: 'Stark', firstName: 'Arya', age: 16 },
@@ -36,9 +36,9 @@ const rows = [
 
 const paginationModel = { page: 0, pageSize: 5 };
 
-export default function CheckTable() {
+export default function DataTable() {
   return (
-    <Paper sx={{ height: "100%", width: '100%' }}>
+    <Paper sx={{ height: 400, width: '100%' }}>
       <DataGrid
         rows={rows}
         columns={columns}

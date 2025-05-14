@@ -8,7 +8,6 @@
 }
 .NFTPage__Right-Side{
     width: 85%;
-    min-height: 100vh;
     height: max-content;
     padding: 20px;
     display: flex;
@@ -154,6 +153,12 @@
 }
 
 /* start top creators responsives -------------------------------------------------------------------------------------------------------------------- */
+@media only screen and (max-height : 536px) {
+    .NFTPage__Right-Side__Boxes{
+        height: 200vh;
+    }
+}
+
 @media only screen and (max-width : 1105px) {
     .NFTPage__Right-Side__Boxes{
         flex-direction: column;

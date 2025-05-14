@@ -19,8 +19,8 @@ export default function Tables() {
                 <RightSideHeader></RightSideHeader>
                 <div className='Tables__Right-Side__Tables-Developement'><SimpleTable></SimpleTable></div>
                 <div className='Tables__Right-Side__Tables-Check'><CheckTable></CheckTable></div>
+                <div className='Tables__Right-Side__Complex-Table'><CheckTable></CheckTable></div>
                 <div className='Tables__Right-Side__Four-Column'><SimpleTable></SimpleTable></div>
-                <div className='Tables__Right-Side__Complex-Table'><SimpleTable></SimpleTable></div>
             </div>
         </div>
     )
