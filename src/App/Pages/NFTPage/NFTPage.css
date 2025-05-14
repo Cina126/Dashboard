@@ -1,12 +1,10 @@
 .NFTPage{
     width: 100%;
-    height: max-content;
+    height: 100vh;
     display: flex;
     flex-direction: row;
+    overflow: auto;
     background-color: var(--warm-blue-color);
-}
-.changeDirect{
-    flex-direction: column;
 }
 .NFTPage__Right-Side{
     width: 85%;
@@ -17,7 +15,6 @@
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    overflow: auto;
     row-gap: 20px;
 }
 .fullWidth{
@@ -156,22 +153,6 @@
     flex-wrap: wrap;
 }
 
-@media only screen and (max-height:536px ) {
-    .NFTPage__Right-Side__Boxes{
-        height: 200vh;
-    }
-}
-@media only screen and (max-width:1105px ) {
-    .NFTPage__Right-Side__Boxes{
-        height: 260vh;
-    }
-}
-@media only screen and (max-width:501px ) {
-    .NFTPage__Right-Side__Boxes{
-        height: 200vh;
-    }
-}
-
 /* start top creators responsives -------------------------------------------------------------------------------------------------------------------- */
 @media only screen and (max-width : 1105px) {
     .NFTPage__Right-Side__Boxes{
@@ -193,6 +174,14 @@
     {
         width: 49%;
         height: 100vh;
+    }
+}
+@media only screen and (max-width : 800px) {
+    .NFTPage{
+        flex-direction: column;
+    }
+    .NFTPage__Right-Side{
+        width: 100%;
     }
 }
 @media only screen and (max-width : 650px) {

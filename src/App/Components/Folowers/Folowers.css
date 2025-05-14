@@ -5,9 +5,10 @@
     flex-direction: column;
 }
 .Folowers__Text{
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
 }
 .Folowers__Value{
     color: gray;
+    font-size: 14px;
 }

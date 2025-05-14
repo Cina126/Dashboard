@@ -1,11 +1,11 @@
 import React, { useContext } from 'react';
 import './LeftMenue.css';
-import context from '../../Context/Context';
+import {Context} from '../../Context/ContextProvider';
 
 import LeftSideLinks from '../LeftMenueLinks/LeftMenueLinks';
 
 export default function LeftMenue({ classProps }) {
-    const contextUser = useContext(context);
+    const contextUser = useContext(Context);
     return (
         <div className={`LeftMenue ${classProps}`} >
             <span className='LeftMenue__Title'>Horizon  <span className='LeftMenue__Title__Inner-Text'>Free</span></span>

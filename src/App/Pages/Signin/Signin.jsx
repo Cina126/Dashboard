@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import './Signin.css';
 
 import Google from './../../../Images/Google__G__logo.svg.webp';
+import BackImg from './../../../Images/cc6f992da23f25d992a4db354584463d19897b48.jpg';
 
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 
@@ -40,7 +41,7 @@ export default function Signinin() {
                     </div>
 
                 </div>
-                <div className='Signin__Container__Right-Side'></div>
+                <img className='Signin__Container__Right-Side' src={BackImg} alt="" />
             </div>
         </div>
     )

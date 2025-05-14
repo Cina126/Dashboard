@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import "./Profile.css";
-import context from '../../Context/Context'
+import {Context} from '../../Context/ContextProvider';
 
 import LeftMenue from './../../Components/LeftMenue/LeftMenue';
 import RightSideHeader from './../../Components/RightSideHeader/RightSideHeader';
@@ -15,7 +15,7 @@ import StorageIcon from '@mui/icons-material/Storage';
 
 
 export default function Profile() {
-    const contextUser = useContext(context);
+    const contextUser = useContext(Context);
 
     return (
         <div className='Profile'>

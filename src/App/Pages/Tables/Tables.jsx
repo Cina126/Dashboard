@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import './Tables.css';
-import context from '../../Context/Context';
+import {Context} from '../../Context/ContextProvider';
 
 // start imports componenets ----------------------------------------------------------------------------------------------------------------------------------
 import LeftMenue from './../../Components/LeftMenue/LeftMenue';
@@ -10,7 +10,7 @@ import CheckTable from './../../Components/CheckTable/CheckTable';
 // end imports componenets ----------------------------------------------------------------------------------------------------------------------------------
 
 export default function Tables() {
-    const contextUser = useContext(context)
+    const contextUser = useContext(Context)
     return (
         <div className='Tables'>
             {contextUser.windowSize >= 800 ? <LeftMenue></LeftMenue> : <LeftMenue classProps={"PhoneStyle"} />}

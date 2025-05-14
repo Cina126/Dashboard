@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import './DashboardsPage.css'
 
 // start imports componenets ------------------------------------------------------------------------------------------------------------------------------------
-import context from '../../Context/Context';
+import {Context} from '../../Context/ContextProvider';
 import LeftMenue from '../../Components/LeftMenue/LeftMenue'
 import RightSideHeader from './../../Components/RightSideHeader/RightSideHeader'
 import Stocks from './../../Components/Stocks/Stocks'
@@ -20,9 +20,9 @@ import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
 // end import icons ------------------------------------------------------------------------------------------------------------------------------------
 
 export default function DashboardsPage() {
-    const contextUser = useContext(context);
+    const contextUser = useContext(Context);
     return (
-        <div className={`DashboardsPage ${contextUser.windowSize <= 800 ? "changeDirect" : ""}`}>
+        <div className="DashboardsPage">
 
             {contextUser.windowSize >= 800 ? <LeftMenue></LeftMenue> : <LeftMenue classProps={"PhoneStyle"} />}
 

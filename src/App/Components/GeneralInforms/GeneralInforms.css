@@ -14,7 +14,38 @@
 }
 .GeneralInforms__Title{
     color: gray;
+    font-size: 12px;
 }
 .GeneralInforms__Value{
     font-weight: bold;
+    font-size: 12px;
+}
+@media only screen and (max-width :1200px) {
+    .GeneralInforms__Title,
+    .GeneralInforms__Value
+    {
+        font-size: 10px;
+    }
+    
+}
+@media only screen and (max-width : 990px) {
+    .GeneralInforms__Title,
+    .GeneralInforms__Value
+    {
+        font-size: 9px;
+    }
+}
+@media only screen and (max-width : 700px) {
+    .GeneralInforms__Title,
+    .GeneralInforms__Value
+    {
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width : 450px) {
+    .GeneralInforms__Title,
+    .GeneralInforms__Value
+    {
+        font-size: 10px;
+    }
 }

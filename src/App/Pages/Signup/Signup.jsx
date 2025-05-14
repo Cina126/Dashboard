@@ -15,7 +15,7 @@ export default function Signup() {
                             <ArrowBackIosIcon></ArrowBackIosIcon>
                             Back To Home Page
                         </NavLink>
-                        <span className='Signup__Container__Left-Side__Container__Signup'>Signup In</span>
+                        <span className='Signup__Container__Left-Side__Container__Signup'>Signup</span>
                         <span className='Signup__Container__Left-Side__Container__Exp'>Enter your email and password And Phone to Register</span>
                         <span className='Signup__Container__Left-Side__Container__Inputs-Texts'>Email*</span>
                         <input className='Signup__Container__Left-Side__Container__Inputs' type="text" placeholder='Mail@gmail.com' required />
@@ -25,7 +25,7 @@ export default function Signup() {
                         <input className='Signup__Container__Left-Side__Container__Inputs' type="text" placeholder="Enter Your Phone Number ..." required />
                         <div className='Signup__Container__Left-Side__Container__Kepp-And-Foret-Handel'>
                             <form>
-                                <input type="checkbox" id='Keep-Logged' checked />
+                                <input type="checkbox" id='Keep-Logged' checked onChange={()=>{}}/>
                                 <label htmlFor="Keep-Logged">Keep Me Logged In</label>
                             </form>
                             <span className='Signup__Container__Left-Side__Container__Kepp-And-Foret-Handel__Forget-Pass'>Forget Password ?</span>

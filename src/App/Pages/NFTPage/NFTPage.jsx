@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useContext, useEffect } from 'react'
 import './NFTPage.css'
-import context from '../../Context/Context'
+import {Context} from '../../Context/ContextProvider';
 
 // start imports componenets ----------------------------------------------------------------------------------------------------------------------------- 
 import LeftMenue from './../../Components/LeftMenue/LeftMenue';
@@ -13,7 +13,7 @@ import TrendNFTs from '../../Components/TrendNFTs/TrendNFTs';
 
 export default function NFTPage() {
 
-  const contextUser = useContext(context);
+  const contextUser = useContext(Context);
 
   useEffect(() => {
     let allCreators = contextUser.topCreators;
@@ -30,7 +30,7 @@ export default function NFTPage() {
   }, []);
 
   return (
-    <div className={`NFTPage ${contextUser.windowSize <= 800 ? "changeDirect" : ""}`}>
+    <div className="NFTPage" >
 
       {contextUser.windowSize >= 800 ? <LeftMenue></LeftMenue> : <LeftMenue classProps={"PhoneStyle"} />}
 

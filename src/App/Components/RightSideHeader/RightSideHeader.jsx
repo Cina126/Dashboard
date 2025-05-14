@@ -1,12 +1,11 @@
 import React from 'react'
 import './RightSideHeader.css'
 
-// start imports icons and Images  -------------------------------------------------------------------------------------------------------------
-import BedtimeIcon from '@mui/icons-material/Bedtime';
-// import SunnyIcon from '@mui/icons-material/Sunny';
+// start imports icons and Images  -----------------------------------------------------------------------------------------------------------------------
 import InfoIcon from '@mui/icons-material/Info';
 import NotificationImportantIcon from '@mui/icons-material/NotificationImportant';
-// end imports icons and Images -------------------------------------------------------------------------------------------------------------
+import Avatar from './../../../Images/Avatar.png'
+// end imports icons and Images -----------------------------------------------------------------------------------------------------------------------
 
 export default function RightSideHeader() {
     return (
@@ -17,9 +16,8 @@ export default function RightSideHeader() {
                 <div className='RightSideHeader__Two-Sides__Right-Section'>
                     <input type="text" placeholder='Search' />
                     <span><NotificationImportantIcon></NotificationImportantIcon></span>
-                    <span><BedtimeIcon></BedtimeIcon></span>
                     <span><InfoIcon></InfoIcon></span>
-                    <img src="" alt="" />
+                    <img src={Avatar} alt="" />
                 </div>
             </div>
 

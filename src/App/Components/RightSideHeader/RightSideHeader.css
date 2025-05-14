@@ -30,6 +30,11 @@
     padding: 10px 0 ;
     border-radius: 20px;
 }
+.RightSideHeader__Two-Sides__Right-Section>img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
 .RightSideHeader__Two-Sides__Right-Section>span>svg{
     font-size: 16px;
     cursor: pointer;

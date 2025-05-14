@@ -7,17 +7,16 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    padding: 10px;
+    padding: 5px;
+    gap: 5px;
     box-shadow: 0 0 10px 1px var(--gray-color);
 }
 .AllProjects>img{
-    width:max-content;
+    width:100px;
     height: 100%;
     border-radius: 4px;;
 }
 .AllProjects__Text-Container{
-    width: 59%;
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,6 +26,7 @@
 .AllProjects__Text-Container>span{
     font-weight: bold;
     font-size: 12px;
+    text-align: center;
 }
 .AllProjects__Text-Container>div{
     width: 100%;
@@ -40,7 +40,46 @@
 .AllProjects__Text-Container>div>:is(span,a){
     font-size: 10px;
     font-weight: bold;
+    text-align: center;
 }
 .AllProjects__Text-Container>div>a{
     color: blue;
+    text-align: center;
+}
+.AllProjects>span>svg{
+    font-size: 22px;
+}
+
+@media only screen and (max-width : 1390px) {
+    .AllProjects__Text-Container>span{
+        font-size: 10px;
+    }
+    .AllProjects__Text-Container>div>:is(span,a){
+        font-size: 8px;
+    }
+    .AllProjects>span>svg{
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width :700px) {
+    .AllProjects__Text-Container>span{
+        font-size: 12px;
+    }
+    .AllProjects__Text-Container>div>:is(span,a){
+        font-size: 12px;
+    }
+    .AllProjects>span>svg{
+        font-size: 26px;
+    }
+}
+@media only screen and (max-width :450px) {
+    .AllProjects__Text-Container>span{
+        font-size: 10px;
+    }
+    .AllProjects__Text-Container>div>:is(span,a){
+        font-size: 10px;
+    }
+    .AllProjects>span>svg{
+        font-size: 22px;
+    }
 }

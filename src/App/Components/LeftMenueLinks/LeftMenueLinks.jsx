@@ -2,10 +2,10 @@
 import React, { useContext } from 'react'
 import { NavLink } from 'react-router-dom'
 import './LeftMenueLinks.css'
-import context from '../../Context/Context';
+import {Context} from '../../Context/ContextProvider';
 
 export default function LeftMenueLinks({ children, text, to }) {
-    const contextUser = useContext(context);
+    const contextUser = useContext(Context);
     return (
         <NavLink
             style={contextUser.windowSize < 800 ? { width: "max-content" } : {}}
