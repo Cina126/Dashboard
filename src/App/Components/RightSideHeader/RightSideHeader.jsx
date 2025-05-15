@@ -1,5 +1,5 @@
-import React from 'react'
-import './RightSideHeader.css'
+import './RightSideHeader.css';
+import { useLocation } from 'react-router-dom'
 
 // start imports icons and Images  -----------------------------------------------------------------------------------------------------------------------
 import InfoIcon from '@mui/icons-material/Info';
@@ -8,11 +8,14 @@ import Avatar from './../../../Images/Avatar.png'
 // end imports icons and Images -----------------------------------------------------------------------------------------------------------------------
 
 export default function RightSideHeader() {
+
+    const location = useLocation();
+
     return (
         <div className='RightSideHeader'>
-            <span className='RightSideHeader__Routes'>Pages/NFT Markets</span>
+            <span className='RightSideHeader__Routes'>Pages{location.pathname}</span>
             <div className='RightSideHeader__Two-Sides'>
-                <span className='RightSideHeader__Two-Sides__Left-Section__Page-Names'>NFT Markets</span>
+                <span className='RightSideHeader__Two-Sides__Left-Section__Page-Names'>{String(location.pathname).slice(1)}</span>
                 <div className='RightSideHeader__Two-Sides__Right-Section'>
                     <input type="text" placeholder='Search' />
                     <span><NotificationImportantIcon></NotificationImportantIcon></span>

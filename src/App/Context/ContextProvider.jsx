@@ -1,4 +1,4 @@
-import { useState , createContext } from 'react';
+import { useState, createContext } from 'react';
 
 // start imports icons -----------------------------------------------------------------------------------------------------------------------------------------------------
 import HomeIcon from '@mui/icons-material/Home';
@@ -34,9 +34,11 @@ export const Context = createContext();
 
 export default function ContextProvider({ children }) {
 
+    // start create states -----------------------------------------------------------------------------------------------------------------------------------------------------
+
     const [leftMenueLinks, setLeftMenueLinks] = useState([
         { id: "A0", text: "Dashboard", icon: HomeIcon, to: "/" },
-        { id: "A1", text: "NFT Markets", icon: ShoppingCartIcon, to: "/NFT Markets" },
+        { id: "A1", text: "Markets", icon: ShoppingCartIcon, to: "/NFT-Markets" },
         { id: "A2", text: "Tables", icon: TableChartIcon, to: "/Tables" },
         { id: "A3", text: "Profile", icon: ProfileIcon, to: "/Profile" },
         { id: "A4", text: "Signin", icon: LoginIcon, to: "/Signin" },
@@ -74,6 +76,7 @@ export default function ContextProvider({ children }) {
         { id: "F3", src: Card3, text: "Mash Gradient", disc: "By Jefery", ETHPrice: 2.30, time: "1m" },
         { id: "F4", src: Card4, text: "3D Cubes", disc: "By Smith jcb", ETHPrice: 0.56, time: "4m" },
         { id: "F5", src: Card5, text: "Heaven", disc: "By Andrew ", ETHPrice: 6.58, time: "12m" },
+        { id: "F6", src: Card3, text: "Mash Gradient", disc: "By Jefery", ETHPrice: 2.30, time: "1m" },
     ]);
     const [folowers, setFolowers] = useState([
         { id: "G0", text: "Posts", value: "17" },
@@ -105,11 +108,15 @@ export default function ContextProvider({ children }) {
         { id: "J8", title: "Subscribe To Newsletter", active: true },
         { id: "J9", title: "Email Me When Someone Follows Me", active: false },
     ]);
+
+    // end create states -----------------------------------------------------------------------------------------------------------------------------------------------------
+
+
     const [windowSize, setWindowSize] = useState(window.outerWidth);
 
     window.addEventListener('resize', () => {
         setWindowSize(window.outerWidth);
-    })
+    });
 
     return (
         <Context.Provider value={{

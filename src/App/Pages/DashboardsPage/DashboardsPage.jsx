@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import './DashboardsPage.css'
 
 // start imports componenets ------------------------------------------------------------------------------------------------------------------------------------
-import {Context} from '../../Context/ContextProvider';
+import { Context } from '../../Context/ContextProvider';
 import LeftMenue from '../../Components/LeftMenue/LeftMenue'
 import RightSideHeader from './../../Components/RightSideHeader/RightSideHeader'
 import Stocks from './../../Components/Stocks/Stocks'
@@ -16,10 +16,16 @@ import BrushCharts from './../../Components/BrushCharts/BrushCharts';
 // start import icons ------------------------------------------------------------------------------------------------------------------------------------
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
+import { useLocation } from 'react-router-dom';
 // end import icons ------------------------------------------------------------------------------------------------------------------------------------
 
 export default function DashboardsPage() {
+    
+    const location = useLocation();
     const contextUser = useContext(Context);
+
+    location.pathname = "/Dashboard";
+
     return (
         <div className="DashboardsPage">
 

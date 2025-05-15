@@ -10,7 +10,6 @@
 }
 .Profile__Right-Side{
     width: 85%;
-    min-height: 100vh;
     height: max-content;
     display: flex;
     justify-content:flex-start;
