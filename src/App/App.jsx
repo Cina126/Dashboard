@@ -1,5 +1,4 @@
-import React from 'react'
-import './App.css'
+import './App.css';
 
 import ContextProvider from './Context/ContextProvider';
 import { useRoutes } from 'react-router-dom'

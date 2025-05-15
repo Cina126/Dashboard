@@ -6,9 +6,6 @@
     overflow: auto;
     background-color: var(--warm-blue-color);
 }
-.changeDirect{
-    flex-direction: column;
-}
 .DashboardsPage__Right-Side{
     width: 85%;
     height: max-content;
@@ -21,9 +18,7 @@
     gap: 20px;
     
 }
-.fullWidth{
-    width: 100%;
-}
+
 .DashboardsPage__Right-Side__Stocks,
 .DashboardsPage__Right-Side__First-Line-Charts,
 .DashboardsPage__Right-Side__Second-Line-Charts,
@@ -180,6 +175,8 @@
     flex-direction: column;
     overflow: auto;
 }
+
+
 /* strat first line boxes -------------------------------------------------------------------------------------------------------------------------------------- */
 @media only screen and (max-width : 1000px) {
     .DashboardsPage__Right-Side__First-Line-Charts__Month__Left-Details__Title{

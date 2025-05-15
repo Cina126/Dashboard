@@ -20,7 +20,7 @@ import { useLocation } from 'react-router-dom';
 // end import icons ------------------------------------------------------------------------------------------------------------------------------------
 
 export default function DashboardsPage() {
-    
+
     const location = useLocation();
     const contextUser = useContext(Context);
 
@@ -29,9 +29,10 @@ export default function DashboardsPage() {
     return (
         <div className="DashboardsPage">
 
-            {contextUser.windowSize >= 800 ? <LeftMenue></LeftMenue> : <LeftMenue classProps={"PhoneStyle"} />}
+            <LeftMenue></LeftMenue>
 
-            <div className={`DashboardsPage__Right-Side ${contextUser.windowSize <= 800 ? "fullWidth" : ""}`}>
+            <div className={`DashboardsPage__Right-Side`}>
+                
                 <RightSideHeader></RightSideHeader>
 
                 <div className='DashboardsPage__Right-Side__Stocks'>

@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useContext, useEffect } from 'react'
 import './NFTPage.css'
-import {Context} from '../../Context/ContextProvider';
+import { Context } from '../../Context/ContextProvider';
 
 // start imports componenets ----------------------------------------------------------------------------------------------------------------------------- 
 import LeftMenue from './../../Components/LeftMenue/LeftMenue';
@@ -32,9 +32,9 @@ export default function NFTPage() {
   return (
     <div className="NFTPage" >
 
-      {contextUser.windowSize >= 800 ? <LeftMenue></LeftMenue> : <LeftMenue classProps={"PhoneStyle"} />}
-
-      <div className={`NFTPage__Right-Side ${contextUser.windowSize <= 800 ? "fullWidth" : ""}`}>
+      <LeftMenue></LeftMenue>
+      
+      <div className={`NFTPage__Right-Side`}>
 
         <RightSideHeader></RightSideHeader>
 

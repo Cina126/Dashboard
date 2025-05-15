@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import "./Profile.css";
-import {Context} from '../../Context/ContextProvider';
+import { Context } from '../../Context/ContextProvider';
 
 import LeftMenue from './../../Components/LeftMenue/LeftMenue';
 import RightSideHeader from './../../Components/RightSideHeader/RightSideHeader';
@@ -19,8 +19,8 @@ export default function Profile() {
 
     return (
         <div className='Profile'>
-            {contextUser.windowSize >= 800 ? <LeftMenue></LeftMenue> : <LeftMenue classProps={"PhoneStyle"} />}
-            
+            <LeftMenue></LeftMenue>
+
             <div className='Profile__Right-Side'>
 
                 <RightSideHeader />

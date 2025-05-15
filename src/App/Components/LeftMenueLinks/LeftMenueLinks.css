@@ -58,12 +58,10 @@
     }
 }
 @media only screen and (max-width:801px) {
+    .LeftMenueLinks{
+        width: max-content;
+    }
     .LeftMenueLinks>span{
         font-size: 8px;
-    }
-}
-@media only screen and (max-width:500px) {
-    .LeftMenueLinks>svg{
-        /* display: none; */
     }
 }
