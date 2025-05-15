@@ -13,9 +13,9 @@ export default function RightSideHeader() {
 
     return (
         <div className='RightSideHeader'>
-            <span className='RightSideHeader__Routes'>Pages{location.pathname}</span>
+            <span className='RightSideHeader__Routes'>Pages{location.pathname === "/" ? "/Dashboard" : location.pathname}</span>
             <div className='RightSideHeader__Two-Sides'>
-                <span className='RightSideHeader__Two-Sides__Left-Section__Page-Names'>{String(location.pathname).slice(1)}</span>
+                <span className='RightSideHeader__Two-Sides__Left-Section__Page-Names'>{location.pathname === "/" ? "Dashboard" : String(location.pathname).slice(1)}</span>
                 <div className='RightSideHeader__Two-Sides__Right-Section'>
                     <input type="text" placeholder='Search' />
                     <span><NotificationImportantIcon></NotificationImportantIcon></span>

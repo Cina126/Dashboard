@@ -21,10 +21,7 @@ import { useLocation } from 'react-router-dom';
 
 export default function DashboardsPage() {
 
-    const location = useLocation();
     const contextUser = useContext(Context);
-
-    location.pathname = "/Dashboard";
 
     return (
         <div className="DashboardsPage">
