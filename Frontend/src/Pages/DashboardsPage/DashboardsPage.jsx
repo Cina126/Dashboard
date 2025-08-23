@@ -30,7 +30,7 @@ export default function DashboardsPage() {
     useEffect(() => {
         async function getStockesDatas() {
             try {
-                axios(`http://localhost:4000/dashboardAPI/stocks/${contextUser.userInforms[0].id}`)
+                axios(`https://dashboard-44w3.onrender.com/dashboardAPI/stocks/${contextUser.userInforms[0].id}`)
                     .then(res => contextUser.setStocks(res.data))
             } catch (error) {
                 console.log(error);
@@ -45,7 +45,7 @@ export default function DashboardsPage() {
 
         async function getLineChartDatas() {
             try {
-                axios(`http://localhost:4000/dashboardAPI/lineChart/${contextUser.userInforms[0].id}`)
+                axios(`https://dashboard-44w3.onrender.com/dashboardAPI/lineChart/${contextUser.userInforms[0].id}`)
                     .then(res => contextUser.setLineChart(res.data))
             } catch (error) {
                 console.log(error);
@@ -60,7 +60,7 @@ export default function DashboardsPage() {
 
         async function getLineChartTitleDatas() {
             try {
-                axios(`http://localhost:4000/dashboardAPI/lineChartTitle/${contextUser.userInforms[0].id}`)
+                axios(`https://dashboard-44w3.onrender.com/dashboardAPI/lineChartTitle/${contextUser.userInforms[0].id}`)
                     .then(res => contextUser.setLineChartTitle(res.data))
             } catch (error) {
                 console.log(error);
@@ -75,7 +75,7 @@ export default function DashboardsPage() {
 
         async function getBarChartDatas() {
             try {
-                axios(`http://localhost:4000/dashboardAPI/barChart/${contextUser.userInforms[0].id}`)
+                axios(`https://dashboard-44w3.onrender.com/dashboardAPI/barChart/${contextUser.userInforms[0].id}`)
                     .then(res => contextUser.setBarChart(res.data))
             } catch (error) {
                 console.log(error);
@@ -90,7 +90,7 @@ export default function DashboardsPage() {
 
         async function getPieChartDatas() {
             try {
-                axios(`http://localhost:4000/dashboardAPI/pieChart/${contextUser.userInforms[0].id}`)
+                axios(`https://dashboard-44w3.onrender.com/dashboardAPI/pieChart/${contextUser.userInforms[0].id}`)
                     .then(res => contextUser.setPieChart(res.data))
             } catch (error) {
                 console.log(error);
@@ -105,7 +105,7 @@ export default function DashboardsPage() {
 
         async function getPieChartTitlesDatas() {
             try {
-                axios(`http://localhost:4000/dashboardAPI/pieChartTitles/${contextUser.userInforms[0].id}`)
+                axios(`https://dashboard-44w3.onrender.com/dashboardAPI/pieChartTitles/${contextUser.userInforms[0].id}`)
                     .then(res => contextUser.setPieChartTitles(res.data))
             } catch (error) {
                 console.log(error);
@@ -120,7 +120,7 @@ export default function DashboardsPage() {
 
         async function getBrushChartDatas() {
             try {
-                axios(`http://localhost:4000/dashboardAPI/brushChart/${contextUser.userInforms[0].id}`)
+                axios(`https://dashboard-44w3.onrender.com/dashboardAPI/brushChart/${contextUser.userInforms[0].id}`)
                     .then(res => contextUser.setBrushChart(res.data))
             } catch (error) {
                 console.log(error);

@@ -18,7 +18,7 @@ export default function Profile() {
 
     useEffect(() => {
         async function getAllUserAllProjects() {
-            axios(`http://localhost:4000/dashboardAPI/projects/${contextUser.userInforms[0].id}`)
+            axios(`https://dashboard-44w3.onrender.com/dashboardAPI/projects/${contextUser.userInforms[0].id}`)
                 .then(res => contextUser.setProjects(res.data))
         }
         getAllUserAllProjects()

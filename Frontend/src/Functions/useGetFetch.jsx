@@ -13,7 +13,7 @@ export default function useGetFetch(url) {
     useEffect(() => {
         async function FETCH() {
             try {
-                axios(`http://localhost:4000/dashboardAPI/${url}`).then(res => setHook(res.data))
+                axios(`https://dashboard-44w3.onrender.com/dashboardAPI/${url}`).then(res => setHook(res.data))
             } catch (error) {
                 swal({
                     title: "error",

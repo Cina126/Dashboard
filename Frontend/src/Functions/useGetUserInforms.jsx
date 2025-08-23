@@ -13,7 +13,7 @@ export default function useGetUserInforms() {
         const localStorageToken = localStorage.getItem("Dashboard-User-Token")
         async function getFetch() {
             try {
-                axios(`http://localhost:4000/dashboardAPI/users`, { headers: { authorization: localStorageToken } })
+                axios(`https://dashboard-44w3.onrender.com/dashboardAPI/users`, { headers: { authorization: localStorageToken } })
                     .then(res => setUserInforms(res.data))
             } catch (error) {
                 console.log(error);
