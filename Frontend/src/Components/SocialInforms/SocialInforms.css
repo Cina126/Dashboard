@@ -1,0 +1,14 @@
+.SocialInforms{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.SocialInforms__Text{
+    font-size: 14px;
+    font-weight: bold;
+}
+.SocialInforms__Value{
+    color: gray;
+    font-size: 14px;
+}

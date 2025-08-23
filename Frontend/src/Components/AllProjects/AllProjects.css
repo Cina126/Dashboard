@@ -1,0 +1,85 @@
+.AllProjects{
+    width: 100%;
+    height: 75px;
+    background-color: white;
+    border-radius: 10px;;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 5px;
+    gap: 5px;
+    box-shadow: 0 0 10px 1px var(--gray-color);
+}
+.AllProjects>img{
+    width:100px;
+    height: 100%;
+    border-radius: 4px;;
+}
+.AllProjects__Text-Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.AllProjects__Text-Container>span{
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+}
+.AllProjects__Text-Container>div{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+}
+.AllProjects__Text-Container>div>:is(span,a){
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+.AllProjects__Text-Container>div>a{
+    color: blue;
+    text-align: center;
+}
+.AllProjects>span>svg{
+    font-size: 22px;
+}
+
+@media only screen and (max-width : 1390px) {
+    .AllProjects__Text-Container>span{
+        font-size: 10px;
+    }
+    .AllProjects__Text-Container>div>:is(span,a){
+        font-size: 8px;
+    }
+    .AllProjects>span>svg{
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width :700px) {
+    .AllProjects__Text-Container>span{
+        font-size: 12px;
+    }
+    .AllProjects__Text-Container>div>:is(span,a){
+        font-size: 12px;
+    }
+    .AllProjects>span>svg{
+        font-size: 26px;
+    }
+}
+@media only screen and (max-width :450px) {
+    .AllProjects__Text-Container>span{
+        font-size: 10px;
+    }
+    .AllProjects__Text-Container>div>:is(span,a){
+        font-size: 10px;
+    }
+    .AllProjects>span>svg{
+        font-size: 22px;
+    }
+}

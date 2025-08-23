@@ -1,0 +1,47 @@
+.Tables{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    background-color: var(--warm-blue-color);
+}
+.Tables__Right-Side{
+    width: 85%;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2%;
+    row-gap: 20px;
+}
+.Tables__Right-Side__Tables-Developement,
+.Tables__Right-Side__Tables-Check ,
+.Tables__Right-Side__Four-Column,
+.Tables__Right-Side__Complex-Table
+{
+    width: 49%;
+    height: 400px;
+}
+
+@media only screen and (max-width : 1200px) {
+    .Tables__Right-Side__Tables-Developement,
+    .Tables__Right-Side__Tables-Check ,
+    .Tables__Right-Side__Four-Column,
+    .Tables__Right-Side__Complex-Table
+    {
+        width: 100%;
+        height: 400px;
+    }
+}
+@media only screen and (max-width : 800px) {
+    .Tables{
+        flex-direction: column;
+    }
+    .Tables__Right-Side{
+        width: 100%;
+    }
+}

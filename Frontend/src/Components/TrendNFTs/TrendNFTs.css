@@ -1,0 +1,74 @@
+.TrendNFTs{
+    width: 32%;
+    height: 300px;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+.TrendNFTs__First-Line,
+.TrendNFTs__Second-Line{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.TrendNFTs>img{
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+}
+:is(.TrendNFTs__First-Line , .TrendNFTs__Second-Line)>span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+.TrendNFTs__Second-Line>span:nth-of-type(1){
+    color: blue;
+}
+.TrendNFTs__Second-Line>button{
+    width: 100px;
+    padding: 10px;
+    background-color: var(--cold-blue-color);
+    color: white;
+    cursor: pointer;;
+    font-size: 10px;
+    border-radius: 10px;
+    border: none;
+}
+@media only screen and (max-width : 1380px) {
+    :is(.TrendNFTs__First-Line , .TrendNFTs__Second-Line)>span{
+        font-size: 10px;
+    }
+    .TrendNFTs__Second-Line>button{
+        font-size: 8px;
+        padding: 5px;
+    }
+}
+@media only screen and (max-width : 700px) {
+    .TrendNFTs{
+        width: 49%;
+    }
+    :is(.TrendNFTs__First-Line , .TrendNFTs__Second-Line)>span{
+        font-size: 12px;
+    }
+    .TrendNFTs__Second-Line>button{
+        font-size: 10px;
+        padding: 10px;
+    }
+}
+@media only screen and (max-width : 500px) {
+    :is(.TrendNFTs__First-Line , .TrendNFTs__Second-Line)>span{
+        font-size: 10px;
+    }
+    .TrendNFTs__Second-Line>button{
+        font-size: 8px;
+        padding: 8px;
+    }
+}

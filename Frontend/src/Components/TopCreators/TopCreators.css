@@ -1,0 +1,38 @@
+.TopCreators {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.TopCreators>span {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+}
+
+.TopCreators>img {
+    width: 30%;
+    height: 60px;
+    border-radius: 4px;
+}
+
+.TopCreators>progress {
+    width: 30%;
+    height: 10px;
+    accent-color: var(--cold-blue-color);
+}
+
+@media only screen and (max-width : 1105px) {
+    .TopCreators>div>img {
+        width: 50px;
+    }
+
+    .TopCreators>span {
+        font-size: 12px;
+    }
+}

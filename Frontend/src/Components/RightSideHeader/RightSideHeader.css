@@ -1,0 +1,106 @@
+.RightSideHeader{
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.RightSideHeader__Routes{
+    width: 100%;
+    font-weight: bold;
+    color: gray;
+    font-size: 12px;
+}
+.RightSideHeader__Two-Sides{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.RightSideHeader__Two-Sides__Right-Section{
+    width: 35%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    background-color: white;
+    padding: 10px 0 ;
+    border-radius: 20px;
+}
+.RightSideHeader__Two-Sides__Right-Section>img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+.RightSideHeader__Two-Sides__Right-Section>span>svg{
+    font-size: 16px;
+    cursor: pointer;
+    color: gray;
+}
+.RightSideHeader__Two-Sides__Right-Section>input{
+    width: 50%;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: var(--warm-blue-color);
+}
+.RightSideHeader__Two-Sides__Left-Section__Page-Names{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+@media only screen and (max-width:1100px) {
+    .RightSideHeader__Two-Sides__Right-Section{
+        width: 40%;
+    }
+    .RightSideHeader__Routes{
+        font-size: 10px;
+    }
+    .RightSideHeader__Two-Sides__Left-Section__Page-Names{
+        font-size: 16px;
+    }
+    .RightSideHeader__Two-Sides__Right-Section>input{
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width:700px) {
+    .RightSideHeader__Two-Sides__Right-Section{
+        padding: 8px 0;
+    }
+    .RightSideHeader__Routes{
+        font-size: 10px;
+    }
+    .RightSideHeader__Two-Sides__Right-Section>span>svg{
+        font-size: 14px;
+    }
+    .RightSideHeader__Two-Sides__Left-Section__Page_Names{
+        font-size: 14px;
+    }
+    .RightSideHeader__Two-Sides__Right-Section>input{
+        padding: 2px 8px;
+        font-size: 10px;
+    }
+}
+@media only screen and (max-width:500px) {
+    .RightSideHeader__Two-Sides__Right-Section{
+        padding: 5px 0;
+    }
+    .RightSideHeader__Routes{
+        font-size: 8px;
+    }
+    .RightSideHeader__Two-Sides__Right-Section>span>svg{
+        font-size: 10px;
+    }
+    .RightSideHeader__Two-Sides__Left-Section__Page-Names{
+        font-size: 12px;
+    }
+    .RightSideHeader__Two-Sides__Right-Section>input{
+        padding: 2px 8px;
+        font-size: 8px;
+    }
+}

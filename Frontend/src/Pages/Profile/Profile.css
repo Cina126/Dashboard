@@ -1,0 +1,315 @@
+.Profile{
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    overflow: auto;
+    background-color: var(--warm-blue-color);
+}
+.Profile__Right-Side{
+    width: 85%;
+    height: max-content;
+    display: flex;
+    justify-content:flex-start;
+    align-content: space-between;
+    flex-direction: column;
+    padding: 20px; 
+    gap: 20px;
+}
+.Profile__Right-Side__First-Line-Datas,
+.Profile__Right-Side__Second-Line-Datas
+{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5%;
+    row-gap: 20px;
+}
+.Profile__Right-Side__First-Line-Datas__Profile-Img{
+    width: 34%;
+    height: 300px;
+    background-color: var(--box-color);
+    border-radius: 10px;
+    padding: 10px;;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.Profile__Right-Side__First-Line-Datas__Profile-Img__Back{
+    width: 100%;
+    height: 150px;
+    background-image: url(./../../../src/Images/3ba68ebca794d6d97d617807d5448758406dcbad.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.Profile__Right-Side__First-Line-Datas__Profile-Img__Back>img{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    position: absolute;
+    /* bottom: -37.5px; */
+    border: 4px solid var(--box-color);
+}
+.Profile__Right-Side__First-Line-Datas__Profile-Img__Name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Profile__Right-Side__First-Line-Datas__Profile-Img__Name__Name{
+    font-size: 14px;
+    font-weight: bold;
+}
+.Profile__Right-Side__First-Line-Datas__Profile-Img__Name__Job{
+    font-size: 12px;
+}
+.Profile__Right-Side__First-Line-Datas__Profile-Img__Folowers{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.Profile__Right-Side__First-Line-Datas__Profile-Storage{
+    width: 29%;
+    height: 300px;
+    border-radius: 10px;
+    background-color: var(--box-color);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.Profile__Right-Side__First-Line-Datas__Profile-Storage__Icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--warm-blue-color);
+}
+.Profile__Right-Side__First-Line-Datas__Profile-Storage__Title{
+    font-weight: bold;
+    font-size: 20px;
+}
+.Profile__Right-Side__First-Line-Datas__Profile-Storage__Explain{
+    width: 100%;
+    text-align: center;
+    color: gray;
+    font-size: 12px;
+}
+.Profile__Right-Side__First-Line-Datas__Profile-Storage__Progress-And-Volumes{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 14px;
+    color: gray;
+    accent-color:blue;
+}
+.Profile__Right-Side__First-Line-Datas__Profile-Storage__Progress{
+    width: 100%;
+}
+.Profile__Right-Side__First-Line-Datas__Profile-Uploader{
+    width: 34%;
+    height: 300px;
+    background-color: var(--box-color);
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.Profile__Right-Side__First-Line-Datas__Profile-Uploader__Input{
+    width: 50%;
+    height: 100%;
+    background-color: var(--warm-blue-color);
+    border: 2px dashed gray;
+    border-radius: 10px;
+    padding: 20px;
+}
+.Profile__Right-Side__First-Line-Datas__Profile-Uploader__Right-Side{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+}
+.Profile__Right-Side__First-Line-Datas__Profile-Uploader__Right-Side__Title,
+.Profile__Right-Side__Second-Line-Datas__Profile-Informations__Title,
+.Profile__Right-Side__Second-Line-Datas__Profile-Projects__Title,
+.Profile__Right-Side__Second-Line-Datas__Profile-Notifications__Title{
+    font-size: 16px;
+    font-weight: bold;
+}
+.Profile__Right-Side__First-Line-Datas__Profile-Uploader__Right-Side__Explain{
+    font-size: 10px;
+    color: gray;
+}
+.Profile__Right-Side__First-Line-Datas__Profile-Uploader__Right-Side__Btn{
+    background-color: blue;
+    border-radius: 5px;
+    cursor: pointer;;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 5px;
+    font-size: 10px;
+}
+.Profile__Right-Side__Second-Line-Datas__Profile-Projects{
+    width: 34%;
+    height: 400px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 20px;
+}
+.Profile__Right-Side__Second-Line-Datas__Profile-Projects__Exp{
+    color: gray;
+    font-size: 12px;
+}
+.Profile__Right-Side__Second-Line-Datas__Profile-Informations{
+    width: 34%;
+    height: 400px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.Profile__Right-Side__Second-Line-Datas__Profile-Informations__Disc{
+    font-size: 12px;
+    color: gray;
+}
+.Profile__Right-Side__Second-Line-Datas__Profile-Informations__Container{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content:space-between;
+    row-gap: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.Profile__Right-Side__Second-Line-Datas__Profile-Notifications{
+    width: 29%;
+    height: 400px;
+    background-color: white;
+    border-radius: 10px;;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.Profile__Right-Side__Second-Line-Datas__Profile-Notifications__Container{
+    width: 100%;
+    min-height: 300px;
+    overflow: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 10px;
+    background-color: white;
+    padding: 5px;
+}
+/*start first line common --------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+@media only screen and (max-width : 800px) {
+    .Profile{
+        flex-direction: column;
+    }
+    .Profile__Right-Side{
+        width: 100%;
+    }
+}
+@media only screen and (max-width : 600px) {
+    .Profile__Right-Side__First-Line-Datas__Profile-Img,
+    .Profile__Right-Side__First-Line-Datas__Profile-Storage
+    {
+        width: 49%;
+    }
+    .Profile__Right-Side__First-Line-Datas__Profile-Uploader{
+        width: 100%;
+    }
+}
+@media only screen and (max-width : 450px) {
+    .Profile__Right-Side__First-Line-Datas__Profile-Img,
+    .Profile__Right-Side__First-Line-Datas__Profile-Storage,
+    .Profile__Right-Side__First-Line-Datas__Profile-Uploader{
+        width: 100%;
+    }
+}
+/* start uploader   --------------------------------------------------------------------------------------------------------------------------------------------- */
+
+@media only screen and (max-width :950px) {
+    .Profile__Right-Side__First-Line-Datas__Profile-Uploader{
+        flex-direction: column;
+    }
+    .Profile__Right-Side__First-Line-Datas__Profile-Uploader__Input,
+    .Profile__Right-Side__First-Line-Datas__Profile-Uploader__Right-Side{
+        width: 100%;
+    }
+}
+/* start storage  --------------------------------------------------------------------------------------------------------------------------------------------- */
+
+@media only screen and (max-width : 950px) {
+    .Profile__Right-Side__First-Line-Datas__Profile-Storage__Title{
+        font-size: 18px;
+    }
+    .Profile__Right-Side__First-Line-Datas__Profile-Storage__Explain{
+        font-size: 10px;
+    }
+    .Profile__Right-Side__First-Line-Datas__Profile-Storage__Progress-And-Volumes{
+        font-size: 10px;
+    }
+}
+
+/* start second line common  --------------------------------------------------------------------------------------------------------------------------------------------- */
+
+@media only screen and (max-width :1150px) {
+    .Profile__Right-Side__Second-Line-Datas__Profile-Projects,
+    .Profile__Right-Side__Second-Line-Datas__Profile-Informations
+    {
+        width: 49%;
+    }
+    .Profile__Right-Side__Second-Line-Datas__Profile-Notifications{
+        width: 100%;
+    }
+}
+@media only screen and (max-width :700px) {
+    .Profile__Right-Side__Second-Line-Datas__Profile-Projects,
+    .Profile__Right-Side__Second-Line-Datas__Profile-Informations,
+    .Profile__Right-Side__Second-Line-Datas__Profile-Notifications{
+        width: 100%;
+    }
+}
+
+

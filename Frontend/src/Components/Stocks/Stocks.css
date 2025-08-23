@@ -1,0 +1,83 @@
+.Stocks{
+    width: 15%;
+    height: 75px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    background-color: var(--box-color);
+    border-radius: 20px;
+    font-size: 12px;
+    padding: 10px;
+    gap: 15px;
+}
+.Stocks>svg{
+    font-size: 30px;
+    color: var(--cold-blue-color);
+}
+.Stocks>img{
+    width: 50px;
+    height: 50%;
+}
+.Stocks__Inner{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.Stocks__Inner__Text{
+    font-size: 12px;
+}
+.Stocks__Inner__Value{
+    font-weight: bold;
+    font-size: 18px;
+}
+.Stocks__Inner__discribtion{
+    font-size: 8px;
+    color: var(--green-color);
+    font-weight: bold;
+    max-lines: 1;
+    overflow: hidden;;
+}
+
+@media only screen and (max-width:1250px) {
+    .Stocks__Inner__Text{
+        font-size: 10px;
+    }
+    .Stocks__Inner__Value{
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width:1100px) {
+    .Stocks{
+        width: 32%;
+    }
+    .Stocks__Inner__Text{
+        font-size: 14px;
+    }
+    .Stocks__Inner__Value{
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width:700px) {
+    .Stocks{
+        height: 70px;
+    }
+    .Stocks__Inner__Text{
+        font-size: 10px;
+    }
+    .Stocks__Inner__Value{
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width:500px) {
+    .Stocks{
+        width: 49%;
+    }
+    .Stocks__Inner__Text{
+        font-size: 12px;
+    }
+    .Stocks__Inner__Value{
+        font-size: 14px;
+    }
+}

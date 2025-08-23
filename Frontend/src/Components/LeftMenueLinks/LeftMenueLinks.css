@@ -1,0 +1,67 @@
+.LeftMenueLinks{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    gap: 15px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.4s linear all;
+    padding: 5px;
+    text-decoration: none;
+}
+.LeftMenueLinks>span{
+    color:black;
+    font-size: 14px;
+}
+.LeftMenueLinks>svg{
+    color: var(--cold-blue-color);
+    font-size: 24px;
+}
+.active :is(.LeftMenueLinks>svg ,.LeftMenueLinks>span){
+    color: var(--box-color);
+}
+.active{
+    background-color: var(--cold-blue-color);
+    color: var(--box-color);
+}
+
+@media only screen and (max-width:1268px) {
+    .LeftMenueLinks{
+        gap: 12px;
+    }
+    .LeftMenueLinks>span{
+        font-size: 10px;
+    }
+    .LeftMenueLinks>svg{
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width:990px) {
+    .LeftMenueLinks{
+        gap: 10px;
+    }
+    .LeftMenueLinks>span{
+        font-size: 10px;
+    }
+    .LeftMenueLinks>svg{
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width:872px) {
+    .LeftMenueLinks{
+        gap: 5px;
+    }
+    .LeftMenueLinks>svg{
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width:801px) {
+    .LeftMenueLinks{
+        width: max-content;
+    }
+    .LeftMenueLinks>span{
+        font-size: 8px;
+    }
+}

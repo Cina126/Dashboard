@@ -1,0 +1,231 @@
+.NFTPage {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    background-color: var(--warm-blue-color);
+}
+
+.NFTPage__Right-Side {
+    width: 85%;
+    height: max-content;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.fullWidth {
+    width: 100%;
+}
+
+.NFTPage__Right-Side__Boxes {
+    width: 100%;
+    height: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+/* start right side styles  */
+
+.NFTPage__Right-Side__Boxes__Right-Side {
+    width: 29%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-direction: column;
+}
+
+.NFTPage__Right-Side__Boxes__Right-Side__Top-Creators {
+    width: 100%;
+    height: 49%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.NFTPage__Right-Side__Boxes__Right-Side__Top-Creators__Titles,
+.NFTPage__Right_Side__Boxes__Right-Side__Historty__Titles {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.NFTPage__Right-Side__Boxes__Right-Side__Top-Creators__Titles>span {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.NFTPage__Right-Side__Boxes__Right-Side__Top-Creators__Categories {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    ;
+    flex-direction: row;
+}
+
+.NFTPage__Right-Side__Boxes__Right-Side__Top-Creators__Categories>span {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+.NFTPage__Right_Side__Boxes__Right_Side__Top_Creators__Titles__Big,
+.NFTPage__Right_Side__Boxes__Right_Side__Historty__Titles__Big {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.NFTPage__Right-Side__Boxes__Right-Side__Top-Creators__Titles__See-All,
+.NFTPage__Right-Side__Boxes__Right-Side__Historty__Titles__See-All {
+    background-color: var(--warm-blue-color);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-sizing: border-box;
+    color: var(--cold-blue-color);
+}
+
+.NFTPage__Right-Side__Boxes__Right-Side__Top-Creators__Componenet-Container {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.NFTPage__Right-Side__Boxes__Right-Side__Historty {
+    width: 100%;
+    height: 49%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.NFTPage__Right-Side__Boxes__Right-Side__Historty__Container {
+    width: 100%;
+    ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* end right side styles  */
+
+/* start left side styles  */
+.NFTPage__Right-Side__Boxes__Left-Side {
+    width: 69%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    row-gap: 10px;
+}
+
+.NFTPage__Right-Side__Boxes__Left-Side__Big-Img {
+    width: 100%;
+    height: 400px;
+    background-image: url(./../../../src/Images//BigImage.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.NFTPage__Right-Side__Boxes__Left-Side__Trnding-Text {
+    width: 100%;
+    height: max-content;
+}
+
+.NFTPage__Right-Side__Boxes__Left-Side__Products-Container {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    row-gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* start left side styles  */
+
+/* start top creators responsives -------------------------------------------------------------------------------------------------------------------- */
+
+@media only screen and (max-width : 1105px) {
+    .NFTPage__Right-Side__Boxes {
+        flex-direction: column;
+        row-gap: 20px;
+        flex-wrap: nowrap;
+        height: max-content;
+    }
+
+    .NFTPage__Right-Side__Boxes__Left-Side,
+    .NFTPage__Right-Side__Boxes__Right-Side {
+        height: max-content;
+        row-gap: 20px;
+        width: 100%;
+    }
+
+    .NFTPage__Right-Side__Boxes__Right-Side {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .NFTPage__Right-Side__Boxes__Right-Side__Top-Creators,
+    .NFTPage__Right-Side__Boxes__Right-Side__Historty {
+        width: 49%;
+        height: 600px;
+    }
+}
+
+@media only screen and (max-width : 800px) {
+    .NFTPage {
+        flex-direction: column;
+    }
+
+    .NFTPage__Right-Side {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width : 650px) {
+    .NFTPage__Right-Side__Boxes__Right-Side {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .NFTPage__Right-Side__Boxes__Right-Side__Top-Creators,
+    .NFTPage__Right-Side__Boxes__Right-Side__Historty {
+        width: 100%;
+    }
+}
+
+/* end top creators responsives -------------------------------------------------------------------------------------------------------------------- */

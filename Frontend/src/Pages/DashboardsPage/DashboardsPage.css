@@ -1,0 +1,353 @@
+.DashboardsPage {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    background-color: var(--warm-blue-color);
+}
+
+.DashboardsPage__Right-Side {
+    width: 85%;
+    height: max-content;
+    padding: 20px;
+    background-color: var(--warm-blue-color);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.DashboardsPage__Right-Side__Stocks,
+.DashboardsPage__Right-Side__First-Line-Charts,
+.DashboardsPage__Right-Side__Second-Line-Charts,
+.DashboardsPage__Right-Side__Third-Line-Charts {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    gap: 2%;
+    row-gap: 10px;
+    flex-wrap: wrap;
+}
+
+.DashboardsPage__Right-Side__First-Line-Charts__Month {
+    width: 49%;
+    height: 250px;
+    background-color: var(--box-color);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.DashboardsPage__Right-Side__First-Line-Charts__Month__Left-Details {
+    width: 29%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.DashboardsPage__Right-Side__First-Line-Charts__Month__Left-Details__Title {
+    font-size: 12px;
+    background-color: var(--gray-color);
+    color: black;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.DashboardsPage__Right-Side__First-Line-Charts__Month__Left-Details__Price {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.DashboardsPage__Right-Side__First-Line-Charts__Month__Left-Details__Spant {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 5px;
+    font-size: 14px;
+}
+
+.DashboardsPage__Right-Side__First-Line-Charts__Month__Left-Details__Spant__Precent {
+    color: var(--green-color);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.DashboardsPage__Right-Side__First-Line-Charts__Month__Left-Details__Track {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 5px;
+    font-size: 14px;
+}
+
+.DashboardsPage__Right-Side__First-Line-Charts__Month__Left-Details__Track>svg {
+    font-size: 16px;
+    color: var(--green-color);
+}
+
+.DashboardsPage__Right-Side__First-Line-Charts__Month__Right-Chart {
+    width: 69%;
+    height: 100%;
+}
+
+.DashboardsPage__Right-Side__First-Line-Charts__Week {
+    width: 49%;
+    height: 250px;
+    background-color: var(--box-color);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.DashboardsPage__Right-Side__First-Line-Charts__Week__Title {
+    width: 100%;
+    height: 10%;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.DashboardsPage__Right-Side__First-Line-Charts__Week__Chart {
+    width: 100%;
+    height: 90%;
+}
+
+.DashboardsPage__Right-Side__Second-Line-Charts__Check-Table {
+    width: 74%;
+    height: 350px;
+    background-color: var(--box-color);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.DashboardsPage__Right-Side__Second-Line-Charts__Pie {
+    width: 24%;
+    height: 350px;
+    background-color: var(--box-color);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.DashboardsPage__Right-Side__Second-Line-Charts__Pie-Two-Sections {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.DashboardsPage__Right-Side__Second-Line-Charts__Pie-Two-Sections>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.DashboardsPage__Right-Side__Third-Line-Charts__Brush-Chart {
+    width: 100%;
+    height: 350px;
+    background-color: var(--box-color);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.DashboardsPage__Right-Side__Third-Line-Charts__TodoList {
+    width: 49%;
+    height: 350px;
+    background-color: var(--box-color);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: auto;
+}
+
+
+/* strat first line boxes -------------------------------------------------------------------------------------------------------------------------------------- */
+@media only screen and (max-width : 1000px) {
+    .DashboardsPage__Right-Side__First-Line-Charts__Month__Left-Details__Title {
+        font-size: 8px;
+    }
+
+    .DashboardsPage__Right-Side__First-Line-Charts__Month__Left-Details__Price {
+        font-size: 25px;
+    }
+
+    .DashboardsPage__Right-Side__First-Line-Charts__Month__Left-Details__Spant {
+        font-size: 10px;
+    }
+
+    .DashboardsPage__Right-Side__First-Line-Charts__Month__Left-Details__Spant__Precent {
+        font-size: 10px;
+    }
+
+    .DashboardsPage__Right-Side__First-Line-Charts__Month__Left-Details__Track {
+        font-size: 10px;
+    }
+
+    .DashboardsPage__Right-Side__First-Line-Charts__Month__Left-Details__Track>svg {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width : 800px) {
+    .DashboardsPage {
+        flex-direction: column;
+    }
+
+    .DashboardsPage__Right-Side {
+        width: 100%;
+    }
+
+    .DashboardsPage__Right-Side__First-Line-Charts__Month__Left-Details__Title {
+        font-size: 8px;
+    }
+
+    .DashboardsPage__Right-Side__First-Line-Charts__Month__Left-Details__Price {
+        font-size: 20px;
+    }
+
+    .DashboardsPage__Right-Side__First-Line-Charts__Month__Left-Details__Spant {
+        font-size: 8px;
+    }
+
+    .DashboardsPage__Right-Side__First-Line-Charts__Month__Left-Details__Spant__Precent {
+        font-size: 8px;
+    }
+
+    .DashboardsPage__Right-Side__First-Line-Charts__Month__Left-Details__Track {
+        font-size: 8px;
+    }
+
+    .DashboardsPage__Right-Side__First-Line-Charts__Month__Left-Details__Track>svg {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width : 650px) {
+    .DashboardsPage__Right-Side__First-Line-Charts {
+        flex-direction: column;
+    }
+
+    .DashboardsPage__Right-Side__First-Line-Charts__Month,
+    .DashboardsPage__Right-Side__First-Line-Charts__Week {
+        width: 100%;
+    }
+
+    .DashboardsPage__Right-Side__First-Line-Charts__Month__Left-Details__Title {
+        font-size: 14px;
+    }
+
+    .DashboardsPage__Right-Side__First-Line-Charts__Month__Left-Details__Price {
+        font-size: 30px;
+    }
+
+    .DashboardsPage__Right-Side__First-Line-Charts__Month__Left-Details__Spant {
+        font-size: 12px;
+    }
+
+    .DashboardsPage__Right-Side__First-Line-Charts__Month__Left-Details__Spant__Precent {
+        font-size: 12px;
+    }
+
+    .DashboardsPage__Right-Side__First-Line-Charts__Month__Left-Details__Track {
+        font-size: 12px;
+    }
+
+    .DashboardsPage__Right-Side__First-Line-Charts__Month__Left-Details__Track>svg {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width : 550px) {
+    .DashboardsPage__Right-Side__First-Line-Charts__Month__Left-Details__Price {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width : 450px) {
+
+    .DashboardsPage__Right-Side__First-Line-Charts__Month,
+    .DashboardsPage__Right-Side__First-Line-Charts__Week {
+        width: 100%;
+    }
+
+    .DashboardsPage__Right-Side__First-Line-Charts__Month__Left-Details__Title {
+        font-size: 10px;
+    }
+
+    .DashboardsPage__Right-Side__First-Line-Charts__Month__Left-Details__Spant {
+        font-size: 10px;
+    }
+
+    .DashboardsPage__Right-Side__First-Line-Charts__Month__Left-Details__Spant__Precent {
+        font-size: 10px;
+    }
+
+    .DashboardsPage__Right-Side__First-Line-Charts__Month__Left-Details__Track {
+        font-size: 10px;
+    }
+
+    .DashboardsPage__Right-Side__First-Line-Charts__Month__Left-Details__Track>svg {
+        font-size: 14px;
+    }
+}
+
+/* end first line boxes -------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* start second line boxes -------------------------------------------------------------------------------------------------------------------------------------- */
+@media only screen and (max-width:1278px) {
+
+    .DashboardsPage__Right-Side__Second-Line-Charts__Check-Table,
+    .DashboardsPage__Right-Side__Second-Line-Charts__Pie {
+        width: 49%;
+    }
+}
+
+@media only screen and (max-width:650px) {
+    .DashboardsPage__Right-Side__Second-Line-Charts {
+        flex-direction: column;
+    }
+
+    .DashboardsPage__Right-Side__Second-Line-Charts__Check-Table,
+    .DashboardsPage__Right-Side__Second-Line-Charts__Pie {
+        width: 100%;
+    }
+}
+
+/* end second line boxes -------------------------------------------------------------------------------------------------------------------------------------- */
