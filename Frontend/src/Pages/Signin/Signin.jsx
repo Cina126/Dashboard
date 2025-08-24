@@ -85,11 +85,11 @@ export default function Signinin() {
             <div className='Signin__Container'>
                 <div className='Signin__Container__Left-Side'>
                     <div className='Signin__Container__Left-Side__Container'>
-                        <span className='Signin__Container__Left-Side__Container__Signin'>Signin In</span>
-                        <span className='Signin__Container__Left-Side__Container__Exp'>Enter your email and password to Signin in</span>
+                        <span className='Signin__Container__Left-Side__Container__Signin'>Sign In</span>
+                        <span className='Signin__Container__Left-Side__Container__Exp'>Enter your email and password to Sign in</span>
                         <div className='Signin__Container__Left-Side__Container__Google'>
                             <img src={Google} alt="" />
-                            <span>Signin In With Google</span>
+                            <span>Sign In With Google</span>
                         </div>
                         <span className='Signin__Container__Left-Side__Container__Or'>____________________OR____________________</span>
                         <span className='Signin__Container__Left-Side__Container__Inputs-Texts'>Email*</span>
@@ -137,7 +137,7 @@ export default function Signinin() {
                             </form>
                             <span className='Signin__Container__Left-Side__Container__Kepp-And-Foret-Handel__Forget-Pass'>Forget Password ?</span>
                         </div>
-                        <button className='Signin__Container__Left-Side__Btn' onClick={loginUserLogic}>Signin In</button>
+                        <button className='Signin__Container__Left-Side__Btn' onClick={loginUserLogic}>Sign In</button>
                         <NavLink to={"/Signup"} className='Signin__Container__Left-Side__Register'>Not Register Yet ? Create An Account</NavLink>
 
                     </div>
