@@ -130,7 +130,6 @@
     border: none;
     outline: none;
     padding: 10px;
-    border-radius: 10px;
     background-color: transparent
 }
 
@@ -229,7 +228,10 @@
 }
 
 @media only screen and (max-width : 700px) {
-    .Signin__Container__Left-Side__Container__Back-Home {
+
+    .Signin__Container__Left-Side__Container__Signin,
+    .Signin__Container__Left-Side__Container__Inputs-Texts,
+    form>label {
         color: white;
     }
 
@@ -242,7 +244,7 @@
         background-image: url(./../../../src/Images/cc6f992da23f25d992a4db354584463d19897b48.jpg);
     }
 
-    .Signin__Container__Left-Side__Container__Inputs {
+    .Signin__Container__Left-Side__Container__Inputs__Input {
         background-color: white;
     }
 }

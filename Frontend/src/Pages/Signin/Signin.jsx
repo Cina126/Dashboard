@@ -85,10 +85,6 @@ export default function Signinin() {
             <div className='Signin__Container'>
                 <div className='Signin__Container__Left-Side'>
                     <div className='Signin__Container__Left-Side__Container'>
-                        <NavLink to={"/Dashboard"} className='Signin__Container__Left-Side__Container__Back-Home'>
-                            <ArrowBackIosIcon></ArrowBackIosIcon>
-                            Back To Home Page
-                        </NavLink>
                         <span className='Signin__Container__Left-Side__Container__Signin'>Signin In</span>
                         <span className='Signin__Container__Left-Side__Container__Exp'>Enter your email and password to Signin in</span>
                         <div className='Signin__Container__Left-Side__Container__Google'>

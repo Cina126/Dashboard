@@ -2,19 +2,12 @@ import React from 'react'
 import './Signup.css';
 import { NavLink } from 'react-router-dom';
 
-import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
-
-
 export default function Signup() {
     return (
         <div className='Signup'>
             <div className='Signup__Container'>
                 <div className='Signup__Container__Left-Side'>
                     <div className='Signup__Container__Left-Side__Container'>
-                        <NavLink to={"/"} className='Signup__Container__Left-Side__Container__Back-Home'>
-                            <ArrowBackIosIcon></ArrowBackIosIcon>
-                            Back To Home Page
-                        </NavLink>
                         <span className='Signup__Container__Left-Side__Container__Signup'>Signup</span>
                         <span className='Signup__Container__Left-Side__Container__Exp'>Enter your email and password And Phone to Register</span>
                         <span className='Signup__Container__Left-Side__Container__Inputs-Texts'>Email*</span>
@@ -25,7 +18,7 @@ export default function Signup() {
                         <input className='Signup__Container__Left-Side__Container__Inputs' type="text" placeholder="Enter Your Phone Number ..." required />
                         <div className='Signup__Container__Left-Side__Container__Kepp-And-Foret-Handel'>
                             <form>
-                                <input type="checkbox" id='Keep-Logged' checked onChange={()=>{}}/>
+                                <input type="checkbox" id='Keep-Logged' checked onChange={() => { }} />
                                 <label htmlFor="Keep-Logged">Keep Me Logged In</label>
                             </form>
                             <span className='Signup__Container__Left-Side__Container__Kepp-And-Foret-Handel__Forget-Pass'>Forget Password ?</span>

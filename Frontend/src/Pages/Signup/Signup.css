@@ -1,4 +1,4 @@
-.Signup{
+.Signup {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -6,13 +6,15 @@
     align-items: flex-start;
     flex-direction: column;
 }
-.Signup__Container{
+
+.Signup__Container {
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: row;
 }
-.Signup__Container__Right-Side{
+
+.Signup__Container__Right-Side {
     width: 50%;
     height: 100%;
     display: flex;
@@ -25,7 +27,8 @@
     background-size: cover;
     border-bottom-left-radius: 25%;
 }
-.Signup__Container__Left-Side{
+
+.Signup__Container__Left-Side {
     width: 50%;
     height: 100%;
     display: flex;
@@ -34,7 +37,8 @@
     flex-direction: column;
     padding: 10px;
 }
-.Signup__Container__Left-Side__Container{
+
+.Signup__Container__Left-Side__Container {
     width: 50%;
     height: 100%;
     display: flex;
@@ -43,7 +47,8 @@
     flex-direction: column;
     gap: 25px;
 }
-.Signup__Container__Left-Side__Container__Back-Home{
+
+.Signup__Container__Left-Side__Container__Back-Home {
     font-size: 12px;
     color: gray;
     display: flex;
@@ -54,20 +59,24 @@
     cursor: pointer;
     text-decoration: none;
 }
-.Signup__Container__Left-Side__Container__Back-Home>svg{
+
+.Signup__Container__Left-Side__Container__Back-Home>svg {
     font-size: 14px;
 }
-.Signup__Container__Left-Side__Container__Signup{
+
+.Signup__Container__Left-Side__Container__Signup {
     font-weight: bold;
     font-size: 20px;
 }
-.Signup__Container__Left-Side__Container__Exp{
+
+.Signup__Container__Left-Side__Container__Exp {
     font-size: 12px;
     color: gray;
 }
-.Signup__Container__Left-Side__Container__Google{
+
+.Signup__Container__Left-Side__Container__Google {
     width: 100%;
-    background-color: var( --warm-blue-color);
+    background-color: var(--warm-blue-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,19 +87,22 @@
     font-size: 14px;
     cursor: pointer;
 }
-.Signup__Container__Left-Side__Container__Google>span , 
-.Signup__Container__Left-Side__Container__Inputs-Texts, 
+
+.Signup__Container__Left-Side__Container__Google>span,
+.Signup__Container__Left-Side__Container__Inputs-Texts,
 .Signup__Container__Left-Side__Container__Kepp-And-Foret-Handel>form>label,
-.Signup__Container__Left-Side__Register
-{
+.Signup__Container__Left-Side__Register {
     font-size: 12px;
     font-weight: bold;
 }
-.Signup__Container__Left-Side__Container__Google>img{
+
+.Signup__Container__Left-Side__Container__Google>img {
     width: 20px;
-    height: 20px;;
+    height: 20px;
+    ;
 }
-.Signup__Container__Left-Side__Container__Or{
+
+.Signup__Container__Left-Side__Container__Or {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -98,7 +110,8 @@
     flex-direction: row;
     color: gray;
 }
-.Signup__Container__Left-Side__Container__Inputs{
+
+.Signup__Container__Left-Side__Container__Inputs {
     width: 100%;
     padding: 5px;
     border: none;
@@ -107,25 +120,29 @@
     padding: 10px;
     border-radius: 10px;
 }
-.Signup__Container__Left-Side__Container__Kepp-And-Foret-Handel{
+
+.Signup__Container__Left-Side__Container__Kepp-And-Foret-Handel {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
 }
-.Signup__Container__Left-Side__Container__Kepp-And-Foret-Handel>form{
+
+.Signup__Container__Left-Side__Container__Kepp-And-Foret-Handel>form {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.Signup__Container__Left-Side__Container__Kepp-And-Foret-Handel__Forget-Pass{
+
+.Signup__Container__Left-Side__Container__Kepp-And-Foret-Handel__Forget-Pass {
     color: blue;
     text-decoration: none;
     font-size: 12px;
     font-weight: bold;
 }
-.Signup__Container__Left-Side__Btn{
+
+.Signup__Container__Left-Side__Btn {
     width: 100%;
     background-color: blue;
     border-radius: 10px;
@@ -135,54 +152,71 @@
     border: none;
     cursor: pointer;
 }
+
 @media only screen and (max-width : 1000px) {
-    .Signup__Container__Right-Side{
+    .Signup__Container__Right-Side {
         width: 40%;
     }
-    .Signup__Container__Left-Side{
+
+    .Signup__Container__Left-Side {
         width: 60%;
     }
-    .Signup__Container__Left-Side__Container__Kepp-And-Foret-Handel__Forget-Pass ,
-    .Signup__Container__Left-Side__Container__Kepp-And-Foret-Handel>form>label
-    {
+
+    .Signup__Container__Left-Side__Container__Kepp-And-Foret-Handel__Forget-Pass,
+    .Signup__Container__Left-Side__Container__Kepp-And-Foret-Handel>form>label {
         font-size: 10px;
     }
-    .Signup__Container__Left-Side__Btn{
+
+    .Signup__Container__Left-Side__Btn {
         font-size: 14px;
     }
-    .Signup__Container__Left-Side__Register{
+
+    .Signup__Container__Left-Side__Register {
         font-size: 10px;
     }
 }
+
 @media only screen and (max-width : 850px) {
-    .Signup__Container__Left-Side__Container__Exp{
+    .Signup__Container__Left-Side__Container__Exp {
         font-size: 10px;
         color: white;
     }
-    .Signup__Container__Left-Side__Container__Google{
+
+    .Signup__Container__Left-Side__Container__Google {
         gap: 10px;
     }
-    .Signup__Container__Left-Side__Container__Google>span{
+
+    .Signup__Container__Left-Side__Container__Google>span {
         font-size: 10px;
     }
 }
+
 @media only screen and (max-width : 700px) {
-    .Signup__Container__Left-Side__Container__Back-Home{
+
+    .Signup__Container__Left-Side__Container__Signup,
+    .Signup__Container__Left-Side__Container__Exp,
+    .Signup__Container__Left-Side__Container__Inputs-Texts,
+    .Signup__Container__Left-Side__Container__Back-Home,
+    form>label {
         color: white;
     }
-    .Signup__Container__Right-Side{
+
+    .Signup__Container__Right-Side {
         display: none;
     }
-    .Signup__Container__Left-Side{
+
+    .Signup__Container__Left-Side {
         width: 100%;
         background-image: url(./../../../src/Images/cc6f992da23f25d992a4db354584463d19897b48.jpg);
     }
-    .Signup__Container__Left-Side__Container__Inputs{
+
+    .Signup__Container__Left-Side__Container__Inputs {
         background-color: white;
     }
 }
+
 @media only screen and (max-width : 430px) {
-    .Signup__Container__Left-Side__Container__Kepp-And-Foret-Handel{
+    .Signup__Container__Left-Side__Container__Kepp-And-Foret-Handel {
         flex-direction: column;
         row-gap: 5px;
     }
