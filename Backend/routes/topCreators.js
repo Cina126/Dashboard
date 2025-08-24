@@ -4,7 +4,7 @@ const database = require("./../database.js")
 const topCreatorsRoutes = express.Router()
 
 topCreatorsRoutes.get("/", (req, res) => {
-    database.query(`SELECT * FROM topCreators`, (err, result) => {
+    database.query(`SELECT * FROM topcreators`, (err, result) => {
         if (err) {
             console.log(err);
         } else {
