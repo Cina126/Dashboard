@@ -12,6 +12,7 @@ import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import Icon from './../../Components/Icons/Icons';
 import axios from 'axios';
 import swal from 'sweetalert'
+import LoadingRequest from '../../Components/LoadingRequest/LoadingRequest';
 
 export default function Signinin() {
 
@@ -26,22 +27,40 @@ export default function Signinin() {
 
     async function loginUserLogic() {
         if (contextUser.isSigninEmailInputValid === true && contextUser.isSigninPasswordInputValid === true) {
-            axios('https://dashboard-44w3.onrender.com/dashboardAPI/users/userLogin', {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                data: JSON.stringify({ email: emailRef.current.value, password: passwordRef.current.value })
-            })
-                .then(res => {
-                    localStorage.setItem("Dashboard-User-Token", res.data[0].token)
-                    swal({
-                        title: "Successfuly Logged in :)",
-                        icon: "success",
-                        button: 'Go To Dashboard'
-                    }).then(res => {
-                        contextUser.setUserInformsFlag(prev => !prev)
-                    })
-
+            try {
+                contextUser.setIsLoadingRequest(true)
+                axios('https://dashboard-44w3.onrender.com/dashboardAPI/users/userLogin', {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    data: JSON.stringify({ email: emailRef.current.value, password: passwordRef.current.value })
                 })
+                    .then(res => {
+                        if (res.data?.length) {
+                            localStorage.setItem("Dashboard-User-Token", res.data?.[0]?.token)
+                            swal({
+                                title: "Successfuly Logged in :)",
+                                icon: "success",
+                                button: 'Go To Dashboard'
+                            }).then(res => {
+                                contextUser.setUserInformsFlag(prev => !prev)
+                            })
+                        } else {
+                            swal({
+                                title: "No Contains Users With This Informs",
+                                icon: "warning",
+                                button: 'Got IT'
+                            })
+                        }
+                    })
+            } catch (error) {
+                swal({
+                    title: "Somethings Went Wrong !",
+                    icon: "error",
+                    button: "Try Again"
+                }).then(res => window.location.reload())
+            } finally {
+                contextUser.setIsLoadingRequest(false)
+            }
         } else {
             swal({
                 title: "Please Fill Filds Truly",
@@ -82,6 +101,9 @@ export default function Signinin() {
 
     return (
         <div className='Signin'>
+
+            {contextUser.isLoadingRequest ? <LoadingRequest></LoadingRequest> : ""}
+
             <div className='Signin__Container'>
                 <div className='Signin__Container__Left-Side'>
                     <div className='Signin__Container__Left-Side__Container'>

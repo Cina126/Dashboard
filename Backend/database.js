@@ -5,5 +5,9 @@ const dashboardDB = mysql.createConnection({
     database: "sql12795557",
     password: "gYYeeAEzFc",
     port: 3306
+
+    // host: "localhost",
+    // user: "root",
+    // database: "Dashboard",
 });
 module.exports = dashboardDB

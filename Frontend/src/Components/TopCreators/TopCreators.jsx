@@ -1,6 +1,5 @@
-import React from 'react'
 import './TopCreators.css'
-export default function TopCreators({ src, FirstCount, Rating }) {
+export default function TopCreators({ src, FirstCount = 0, Rating }) {
     return (
         <div className='TopCreators'>
             <img src={src} alt="" />

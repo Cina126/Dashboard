@@ -37,6 +37,14 @@ server.use("/dashboardAPI/projects", projectsRoutes)
 
 const PORT = process.env.PORT || 5000
 
+// server.listen(4000, (err) => {
+//     err ? console.log(err) : console.log("server run on port process.env.PORT")
+// })
+
 server.listen(PORT, "0.0.0.0", (err) => {
     err ? console.log(err) : console.log("server run on port process.env.PORT")
 })
+
+// http://localhost:4000
+
+// https://dashboard-44w3.onrender.com

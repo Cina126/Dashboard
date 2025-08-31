@@ -27,7 +27,7 @@ export default function ContextProvider({ children }) {
     const [pieChart, setPieChart] = useState([]);
     const [pieChartTitles, setPieChartTitles] = useState([]);
     const [brushChart, setBrushChart] = useState([])
-    const [projects , setProjects] = useState([])
+    const [projects, setProjects] = useState([])
 
     const [passwordValidation] = useState(/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*]).{8,}$/)
     const [emailValidation] = useState(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/);
@@ -54,6 +54,8 @@ export default function ContextProvider({ children }) {
     const [isSigninEmailInputValid, setIsSigninEmailInputValid] = useState(null)
     const [isSigninPasswordInputValid, setIsSigninPasswordInputValid] = useState(null)
     const [signinPasswordType, setSigninPasswordType] = useState("password")
+
+    const [isLoadingRequest, setIsLoadingRequest] = useState(false)
 
     // end create states -----------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -84,7 +86,9 @@ export default function ContextProvider({ children }) {
             isSigninEmailInputValid, setIsSigninEmailInputValid,
             isSigninPasswordInputValid, setIsSigninPasswordInputValid,
             signinPasswordType, setSigninPasswordType,
-            projects , setProjects
+            projects, setProjects,
+
+            isLoadingRequest, setIsLoadingRequest
         }}>
             {children}
         </Context.Provider>
