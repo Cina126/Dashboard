@@ -1,10 +1,10 @@
 .RightSideHeader{
     width: 100%;
-    height: 75px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
+    row-gap: 10px;
 }
 .RightSideHeader__Routes{
     width: 100%;

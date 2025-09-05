@@ -1,0 +1,235 @@
+.Todos {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    overflow: auto;
+    background-color: var(--warm-blue-color);
+}
+
+.Todos__Right-Side {
+    width: 80%;
+    height: max-content;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Todos__Right-Side__Add-New-Todo {
+    width: 90%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0 10px 1px var(--gray-color);
+    border-radius: 4px;
+    padding: 5px;
+    gap: 10px;
+}
+
+.Todos__Right-Side__Add-New-Todo__Input {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.Todos__Right-Side__Add-New-Todo__Input>input {
+    width: 95%;
+    padding: 5px;
+    background-color: white;
+    border: none;
+    outline: none;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.Todos__Right-Side__Add-New-Todo__Input>svg {
+    width: 5%;
+    font-size: 18px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.Todos__Right-Side__Add-New-Todo>button {
+    width: 100%;
+    background-color: var(--cold-blue-color);
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.Todos__Right-Side__TodoList {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Todos__Right-Side__TodoList>span {
+    font-size: 30px;
+}
+
+.Todos__Right-Side__TodoList__Situations {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.Todos__Right-Side__TodoList__Situations>div {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--cold-blue-color);
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    color: var(--cold-blue-color);
+}
+
+.activeSituation {
+    background-color: var(--cold-blue-color);
+    color: white !important;
+}
+
+.Todos__Right-Side__Show-Todos {
+    width: 90%;
+    max-height: 350px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    overflow: auto;
+}
+
+.Todos__Edit-Modal {
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: oklch(92.994% 0.03354 272.79 / 0.9);
+    z-index: 20;
+}
+
+.Todos__Edit-Modal>input {
+    width: 60%;
+    font-size: 14px;
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+}
+
+.Todos__Edit-Modal>button {
+    border-radius: 4px;
+    color: white;
+    background-color: var(--cold-blue-color);
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.Todos__Edit-Modal>span {
+    padding: 5px;
+    border-radius: 4px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    cursor: pointer;
+}
+
+.Todos__Right-Side__Two-Delete-Button {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.Todos__Right-Side__Two-Delete-Button>button {
+    width: 40%;
+    background-color: red;
+    border-radius: 4px;
+    padding: 5px;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+.Todos__Right-Side__Two-Delete-Button>button:disabled {
+    background-color: var(--gray-color);
+    cursor: default;
+}
+
+@media only screen and (max-width : 860px) {
+    .Todos__Right-Side__TodoList__Situations>div {
+        width: 150px;
+        padding: 2px;
+    }
+}
+
+@media only screen and (max-width : 1300px) {
+    .Todos {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .Todos__Right-Side {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width : 550px) {
+    .Todos__Right-Side__TodoList__Situations>div {
+        width: 75px;
+    }
+}
+
+@media only screen and (max-width : 500px) {
+
+    .Todos__Right-Side__Add-New-Todo__Input>input,
+    .Todos__Right-Side__Add-New-Todo>button,
+    .Todos__Right-Side__TodoList__Situations>div,
+    .Todos__Right-Side__Two-Delete-Button>button {
+        font-size: 10px;
+    }
+
+    .Todos__Right-Side__Add-New-Todo__Input>svg {
+        font-size: 12px;
+    }
+
+}

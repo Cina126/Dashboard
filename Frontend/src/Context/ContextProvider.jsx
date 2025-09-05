@@ -1,6 +1,7 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable no-unused-vars */
 
-import { useState, createContext } from 'react';
+import { useState, createContext, useEffect } from 'react';
 import useGetFetch from '../Functions/useGetFetch';
 import useGetUserInforms from '../Functions/useGetUserInforms';
 
@@ -19,6 +20,7 @@ export default function ContextProvider({ children }) {
     const [leftMenuLinks, setLeftMenuLinks, leftMenuLinksFlag, setLeftMenuLinksFlag] = useGetFetch("leftMenusLinks")
     const [topCreators, setTopCreators, topCreatorsFlag, setTopCreatorsFlag] = useGetFetch("topCreators");
     const [histories, setHistories, historiesFlag, setHistoriesFlag] = useGetFetch("histories");
+    const [todos, setTodos, todosFlag, setTodosFlag] = useGetFetch("todos");
 
     const [stocks, setStocks] = useState([])
     const [lineChart, setLineChart] = useState([])
@@ -28,6 +30,11 @@ export default function ContextProvider({ children }) {
     const [pieChartTitles, setPieChartTitles] = useState([]);
     const [brushChart, setBrushChart] = useState([])
     const [projects, setProjects] = useState([])
+    const [isOpenEditTodoModal, setIsOpenEditTodoModal] = useState({ todoID: "", situation: false })
+    const [personTodos, setPersonTodos] = useState([])
+    const [editTodoText, setEditTodoText] = useState("")
+    const [todosFilter, setTodosFilter] = useState("All")
+    const [isOpenHiddenMenu, setIsOpenHiddenMenu] = useState(false)
 
     const [passwordValidation] = useState(/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*]).{8,}$/)
     const [emailValidation] = useState(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/);
@@ -62,9 +69,23 @@ export default function ContextProvider({ children }) {
 
     const [windowSize, setWindowSize] = useState(window.outerWidth);
 
-    window.addEventListener('resize', () => {
-        setWindowSize(window.outerWidth);
-    });
+
+
+    useEffect(() => {
+        window.addEventListener('resize', () => {
+            setWindowSize(window.outerWidth);
+        });
+    }, [])
+
+    useEffect(() => {
+        if (windowSize > 1300) {
+            setIsOpenHiddenMenu(false)
+        }
+    }, [windowSize])
+
+    useEffect(() => {
+        setIsOpenHiddenMenu(false)
+    }, [window.location.href])
 
     return (
         <Context.Provider value={{
@@ -87,6 +108,12 @@ export default function ContextProvider({ children }) {
             isSigninPasswordInputValid, setIsSigninPasswordInputValid,
             signinPasswordType, setSigninPasswordType,
             projects, setProjects,
+            todos, setTodos, todosFlag, setTodosFlag,
+            isOpenEditTodoModal, setIsOpenEditTodoModal,
+            personTodos, setPersonTodos,
+            editTodoText, setEditTodoText,
+            todosFilter, setTodosFilter,
+            isOpenHiddenMenu, setIsOpenHiddenMenu,
 
             isLoadingRequest, setIsLoadingRequest
         }}>

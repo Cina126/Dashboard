@@ -8,7 +8,7 @@
 }
 
 .NFTPage__Right-Side {
-    width: 85%;
+    width: 80%;
     height: max-content;
     padding: 20px;
     display: flex;
@@ -24,7 +24,7 @@
 
 .NFTPage__Right-Side__Boxes {
     width: 100%;
-    height: 1200px;
+    height: 1400px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -147,7 +147,6 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    row-gap: 10px;
 }
 
 .NFTPage__Right-Side__Boxes__Left-Side__Big-Img {
@@ -162,22 +161,34 @@
 .NFTPage__Right-Side__Boxes__Left-Side__Trnding-Text {
     width: 100%;
     height: max-content;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .NFTPage__Right-Side__Boxes__Left-Side__Products-Container {
     width: 100%;
     height: max-content;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-start;
     flex-direction: row;
-    row-gap: 20px;
+    gap: 2%;
+    row-gap: calc((2*69*80*1vw)/(100*100));
     flex-wrap: wrap;
 }
 
-/* start left side styles  */
+/* end left side styles  */
 
 /* start top creators responsives -------------------------------------------------------------------------------------------------------------------- */
+@media only screen and (max-width : 1300px) {
+    .NFTPage {
+        flex-direction: column;
+    }
+
+    .NFTPage__Right-Side {
+        width: 100%;
+    }
+}
 
 @media only screen and (max-width : 1105px) {
     .NFTPage__Right-Side__Boxes {
@@ -202,21 +213,14 @@
     .NFTPage__Right-Side__Boxes__Right-Side__Top-Creators,
     .NFTPage__Right-Side__Boxes__Right-Side__Historty {
         width: 49%;
-        height: 600px;
-    }
-}
-
-@media only screen and (max-width : 800px) {
-    .NFTPage {
-        flex-direction: column;
-    }
-
-    .NFTPage__Right-Side {
-        width: 100%;
+        height: 650px;
     }
 }
 
 @media only screen and (max-width : 650px) {
+    .NFTPage__Right-Side__Boxes__Left-Side__Big-Img{
+        background-position: 100%;
+    }
     .NFTPage__Right-Side__Boxes__Right-Side {
         flex-direction: column;
         row-gap: 20px;

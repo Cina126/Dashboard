@@ -1,5 +1,6 @@
 const mysql = require("mysql");
 const dashboardDB = mysql.createConnection({
+    
     host: "sql12.freesqldatabase.com",
     user: "sql12795557",
     database: "sql12795557",

@@ -15,7 +15,8 @@ const pieChartTitlesRoutes = require("./routes/pieChartTitle")
 const brushChartRoutes = require("./routes/brushChart")
 const usersRoutes = require("./routes/users")
 const historiesRoutes = require("./routes/histories")
-const projectsRoutes = require("./routes/projects")
+const projectsRoutes = require("./routes/projects");
+const todosRoutes = require("./routes/todos");
 
 const server = express()
 
@@ -34,6 +35,7 @@ server.use("/dashboardAPI/brushChart", brushChartRoutes)
 server.use("/dashboardAPI/users", usersRoutes)
 server.use("/dashboardAPI/histories", historiesRoutes)
 server.use("/dashboardAPI/projects", projectsRoutes)
+server.use("/dashboardAPI/todos", todosRoutes)
 
 const PORT = process.env.PORT || 5000
 

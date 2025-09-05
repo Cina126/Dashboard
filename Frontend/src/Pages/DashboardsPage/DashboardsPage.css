@@ -8,7 +8,7 @@
 }
 
 .DashboardsPage__Right-Side {
-    width: 85%;
+    width: 80%;
     height: max-content;
     padding: 20px;
     background-color: var(--warm-blue-color);
@@ -31,7 +31,7 @@
     align-items: center;
     flex-direction: row;
     gap: 2%;
-    row-gap: 10px;
+    row-gap: var(--dashboard-page-row-gap);
     flex-wrap: wrap;
 }
 
@@ -197,6 +197,16 @@
     overflow: auto;
 }
 
+@media only screen and (max-width : 1300px) {
+    .DashboardsPage {
+        flex-direction: column;
+        display: flex;
+    }
+
+    .DashboardsPage__Right-Side {
+        width: 100%;
+    }
+}
 
 /* strat first line boxes -------------------------------------------------------------------------------------------------------------------------------------- */
 @media only screen and (max-width : 1000px) {
@@ -226,13 +236,6 @@
 }
 
 @media only screen and (max-width : 800px) {
-    .DashboardsPage {
-        flex-direction: column;
-    }
-
-    .DashboardsPage__Right-Side {
-        width: 100%;
-    }
 
     .DashboardsPage__Right-Side__First-Line-Charts__Month__Left-Details__Title {
         font-size: 8px;

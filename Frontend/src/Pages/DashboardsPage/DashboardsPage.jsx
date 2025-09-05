@@ -5,7 +5,7 @@ import './DashboardsPage.css'
 
 // start imports componenets ------------------------------------------------------------------------------------------------------------------------------------
 import { Context } from '../../Context/ContextProvider';
-import LeftMenue from '../../Components/LeftMenue/LeftMenue'
+import LeftMenu from '../../Components/LeftMenu/LeftMenu'
 import RightSideHeader from './../../Components/RightSideHeader/RightSideHeader'
 import Stocks from './../../Components/Stocks/Stocks'
 import DataGrid from '../../Components/DataGrid/DataGrid';
@@ -21,6 +21,8 @@ import LoadingPage from './../../Components/LoadingPage/LoadingPage'
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import swal from 'sweetalert'
 import axios from 'axios';
+import SummeryMenu from '../../Components/SummeryMenu/SummeryMenu';
+import LeftHiddenMenu from '../../Components/LeftHiddenMenu/LeftHiddenMenu';
 // end import icons ------------------------------------------------------------------------------------------------------------------------------------
 
 export default function DashboardsPage() {
@@ -163,10 +165,13 @@ export default function DashboardsPage() {
                     ""
             }
 
-            <LeftMenue></LeftMenue>
+            <LeftMenu></LeftMenu>
+            <SummeryMenu></SummeryMenu>
+
+            {contextUser.isOpenHiddenMenu ? <LeftHiddenMenu style={{ left: "0" }}></LeftHiddenMenu> : <LeftHiddenMenu style={{ left: "-100%" }}></LeftHiddenMenu>}
 
             <div className={`DashboardsPage__Right-Side`}>
-                
+
                 <RightSideHeader></RightSideHeader>
 
                 <div className='DashboardsPage__Right-Side__Stocks'>

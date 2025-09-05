@@ -1,4 +1,4 @@
-.LeftMenueLinks{
+.LeftMenuLinks{
     width: 100%;
     display: flex;
     justify-content: flex-start;
@@ -11,15 +11,15 @@
     padding: 5px;
     text-decoration: none;
 }
-.LeftMenueLinks>span{
+.LeftMenuLinks>span{
     color:black;
     font-size: 14px;
 }
-.LeftMenueLinks>svg{
+.LeftMenuLinks>svg{
     color: var(--cold-blue-color);
     font-size: 24px;
 }
-.active :is(.LeftMenueLinks>svg ,.LeftMenueLinks>span){
+.active :is(.LeftMenuLinks>svg ,.LeftMenuLinks>span){
     color: var(--box-color);
 }
 .active{
@@ -27,41 +27,41 @@
     color: var(--box-color);
 }
 
-@media only screen and (max-width:1268px) {
-    .LeftMenueLinks{
+/* @media only screen and (max-width:1268px) {
+    .LeftMenuLinks{
         gap: 12px;
     }
-    .LeftMenueLinks>span{
+    .LeftMenuLinks>span{
         font-size: 10px;
     }
-    .LeftMenueLinks>svg{
+    .LeftMenuLinks>svg{
         font-size: 20px;
     }
 }
 @media only screen and (max-width:990px) {
-    .LeftMenueLinks{
+    .LeftMenuLinks{
         gap: 10px;
     }
-    .LeftMenueLinks>span{
+    .LeftMenuLinks>span{
         font-size: 10px;
     }
-    .LeftMenueLinks>svg{
+    .LeftMenuLinks>svg{
         font-size: 15px;
     }
 }
 @media only screen and (max-width:872px) {
-    .LeftMenueLinks{
+    .LeftMenuLinks{
         gap: 5px;
     }
-    .LeftMenueLinks>svg{
+    .LeftMenuLinks>svg{
         font-size: 12px;
     }
 }
 @media only screen and (max-width:801px) {
-    .LeftMenueLinks{
+    .LeftMenuLinks{
         width: max-content;
     }
-    .LeftMenueLinks>span{
+    .LeftMenuLinks>span{
         font-size: 8px;
     }
-}
+} */

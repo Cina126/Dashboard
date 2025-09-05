@@ -1,14 +1,14 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 
 import { useContext, useEffect } from 'react';
-import './LeftMenue.css';
+import './LeftMenu.css';
 import { Context } from '../../Context/ContextProvider';
 import swal from 'sweetalert';
 
-import LeftSideLinks from '../LeftMenueLinks/LeftMenueLinks';
+import LeftMenuLinks from '../LeftMenuLinks/LeftMenuLinks';
 import Icon from '../Icons/Icons';
 
-export default function LeftMenue() {
+export default function LeftMenu() {
 
     const contextUser = useContext(Context);
 
@@ -30,16 +30,16 @@ export default function LeftMenue() {
     }
 
     return (
-        <div className="LeftMenue" >
-            <span className='LeftMenue__Title'>Horizon  <span className='LeftMenue__Title__Inner-Text'>Free</span></span>
+        <div className="LeftMenu" >
+            <span className='LeftMenu__Title'>Horizon  <span className='LeftMenu__Title__Inner-Text'>Free</span></span>
             {
                 contextUser.leftMenuLinks
                     ?
-                    contextUser.leftMenuLinks.map((informs) => <LeftSideLinks key={informs.id} {...informs}></LeftSideLinks>)
+                    contextUser.leftMenuLinks.map((informs) => <LeftMenuLinks key={informs.id} {...informs}></LeftMenuLinks>)
                     :
                     ""
             }
-            <div onClick={logoutLogic} className='LeftMenue__Logout'>
+            <div onClick={logoutLogic} className='LeftMenu__Logout'>
                 <Icon iconName={"Logout"}></Icon>
                 <span>Logout</span>
             </div>

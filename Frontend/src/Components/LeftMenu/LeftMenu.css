@@ -1,5 +1,5 @@
-.LeftMenue {
-    width: 15%;
+.LeftMenu {
+    width: 20%;
     height: 100vh;
     position: sticky;
     top: 0;
@@ -13,7 +13,7 @@
     z-index: 2;
 }
 
-.LeftMenue__Title {
+.LeftMenu__Title {
     font-size: 30px;
     font-weight: bold;
     display: flex;
@@ -22,11 +22,11 @@
     flex-wrap: wrap;
 }
 
-.LeftMenue__Title__Inner-Text {
+.LeftMenu__Title__Inner-Text {
     color: var(--cold-blue-color);
 }
 
-.LeftMenue__Logout {
+.LeftMenu__Logout {
     width: 100%;
     display: flex;
     justify-content: flex-start;
@@ -40,42 +40,47 @@
     text-decoration: none;
 }
 
-.LeftMenue__Logout>span {
+.LeftMenu__Logout>span {
     color: black;
     font-size: 14px;
 }
 
-.LeftMenue__Logout>svg {
+.LeftMenu__Logout>svg {
     color: var(--cold-blue-color);
     font-size: 24px;
 }
 
-@media only screen and (max-width:1473px) {
-    .LeftMenue__Title {
+ @media only screen and (max-width:1473px) {
+    .LeftMenu__Title {
         font-size: 25px;
     }
 }
+@media only screen and (max-width : 1300px) {
+    .LeftMenu{
+        display: none;
+    }
+}
 
-@media only screen and (max-width:1272px) {
-    .LeftMenue__Title {
+/* @media only screen and (max-width:1272px) {
+    .LeftMenu__Title {
         font-size: 20px;
     }
 }
 
 @media only screen and (max-width:1071px) {
-    .LeftMenue__Title {
+    .LeftMenu__Title {
         font-size: 15px;
     }
 }
 
 @media only screen and (max-width:870px) {
-    .LeftMenue__Title {
+    .LeftMenu__Title {
         font-size: 12px;
     }
 }
 
 @media only screen and (max-width : 801px) {
-    .LeftMenue {
+    .LeftMenu {
         width: 100%;
         height: max-content;
         flex-direction: row;
@@ -84,66 +89,67 @@
 }
 
 @media only screen and (max-width:750px) {
-    .LeftMenue__Title {
+    .LeftMenu__Title {
         font-size: 10px;
     }
 }
 
 @media only screen and (max-width:500px) {
-    .LeftMenue {
+    .LeftMenu {
         gap: 15px;
     }
 
-    .LeftMenue__Title {
+    .LeftMenu__Title {
         display: none;
     }
-}
+} */
+
 
 /* responsive logout btn  */
 @media only screen and (max-width:1268px) {
-    .LeftMenue__Logout {
+    .LeftMenu__Logout {
         gap: 12px;
     }
 
-    .LeftMenue__Logout>span {
+    .LeftMenu__Logout>span {
         font-size: 10px;
     }
 
-    .LeftMenue__Logout>svg {
+    .LeftMenu__Logout>svg {
         font-size: 20px;
     }
 }
 
 @media only screen and (max-width:990px) {
-    .LeftMenue__Logout {
+    .LeftMenu__Logout {
         gap: 10px;
     }
 
-    .LeftMenue__Logout>span {
+    .LeftMenu__Logout>span {
         font-size: 10px;
     }
 
-    .LeftMenue__Logout>svg {
+    .LeftMenu__Logout>svg {
         font-size: 15px;
     }
 }
 
 @media only screen and (max-width:872px) {
-    .LeftMenue__Logout {
+    .LeftMenu__Logout {
         gap: 5px;
     }
 
-    .LeftMenue__Logout>svg {
+    .LeftMenu__Logout>svg {
         font-size: 12px;
     }
 }
 
 @media only screen and (max-width:801px) {
-    .LeftMenue__Logout {
+    .LeftMenu__Logout {
         width: max-content;
     }
 
-    .LeftMenue__Logout>span {
+    .LeftMenu__Logout>span {
         font-size: 8px;
     }
-}
+} 

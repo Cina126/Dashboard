@@ -1,0 +1,56 @@
+.TodosComp {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 5px;
+    background-color: white;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.TodosComp__Right-Btns {
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.TodosComp__Right-Btns>input {
+    cursor: pointer;
+}
+
+.TodosComp__Right-Btns>span>svg {
+    font-size: 18px;
+}
+
+.TodosComp__Right-Btns>span:nth-of-type(1) {
+    color: var(--cold-blue-color);
+    cursor: pointer;
+}
+
+.TodosComp__Right-Btns>span:nth-of-type(2) {
+    color: red;
+    cursor: pointer;
+}
+
+.TodosComp__Todo-Text {
+    width: 200px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.TodosComp__Done-Text {
+    width: 200px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    text-decoration: line-through 1.5px red;
+    color: rgb(150, 150, 150);
+}

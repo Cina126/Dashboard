@@ -1,4 +1,5 @@
-import DashboardsPage from '../Pages/DashboardsPage/DashboardsPage'
+import DashboardsPage from '../Pages/DashboardsPage/DashboardsPage';
+import Todos from '../Pages/Todos/Todos';
 import NFTPage from '../Pages/NFTPage/NFTPage';
 import Tables from '../Pages/Tables/Tables';
 import Profile from '../Pages/Profile/Profile';
@@ -10,6 +11,7 @@ import Private from '../Pages/Private/Private';
 
 const routes = [
     { path: "/", element: <Private><DashboardsPage></DashboardsPage></Private> },
+    { path: "/MyTodos", element: <Private><Todos></Todos></Private> },
     { path: "/NFT-Markets", element: <Private><NFTPage></NFTPage></Private> },
     { path: "/Tables", element: <Private><Tables></Tables></Private> },
     { path: "/Profile", element: <Private><Profile></Profile></Private> },

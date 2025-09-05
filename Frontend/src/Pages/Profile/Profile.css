@@ -9,7 +9,7 @@
     background-color: var(--warm-blue-color);
 }
 .Profile__Right-Side{
-    width: 85%;
+    width: 80%;
     height: max-content;
     display: flex;
     justify-content:flex-start;
@@ -242,7 +242,7 @@
 }
 /*start first line common --------------------------------------------------------------------------------------------------------------------------------------------------- */
 
-@media only screen and (max-width : 800px) {
+@media only screen and (max-width : 1300px) {
     .Profile{
         flex-direction: column;
     }

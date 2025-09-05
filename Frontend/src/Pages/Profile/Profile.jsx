@@ -3,7 +3,7 @@ import React, { useContext, useEffect } from 'react'
 import "./Profile.css";
 import { Context } from '../../Context/ContextProvider';
 
-import LeftMenue from './../../Components/LeftMenue/LeftMenue';
+import LeftMenu from './../../Components/LeftMenu/LeftMenu';
 import RightSideHeader from './../../Components/RightSideHeader/RightSideHeader';
 import SocialInforms from '../../Components/SocialInforms/SocialInforms';
 import AllProjects from './../../Components/AllProjects/AllProjects';
@@ -11,6 +11,8 @@ import GeneralInforms from './../../Components/GeneralInforms/GeneralInforms';
 import Notifications from './../../Components/Notifications/Notifications';
 import StorageIcon from '@mui/icons-material/Storage';
 import axios from 'axios';
+import LeftHiddenMenu from '../../Components/LeftHiddenMenu/LeftHiddenMenu';
+import SummeryMenu from '../../Components/SummeryMenu/SummeryMenu';
 
 export default function Profile() {
 
@@ -27,7 +29,10 @@ export default function Profile() {
     return (
         <div className='Profile'>
 
-            <LeftMenue></LeftMenue>
+            <LeftMenu></LeftMenu>
+            <SummeryMenu></SummeryMenu>
+
+            {contextUser.isOpenHiddenMenu ? <LeftHiddenMenu style={{ left: "0" }}></LeftHiddenMenu> : <LeftHiddenMenu style={{ left: "-100%" }}></LeftHiddenMenu>}
 
             <div className='Profile__Right-Side'>
 

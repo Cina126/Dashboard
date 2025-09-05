@@ -1,0 +1,77 @@
+.LeftHiddenMenu {
+    width: 30%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    background-color: var(--box-color);
+    padding: 20px;
+    z-index: 20;
+    transition: 0.4s linear all;
+    border-right: 2px solid var(--cold-blue-color);
+}
+
+.LeftHiddenMenu__Title {
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.LeftHiddenMenu__Title__Inner-Text {
+    color: var(--cold-blue-color);
+}
+
+.LeftHiddenMenu__Logout {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    gap: 15px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.2s linear all;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.LeftHiddenMenu__Logout>span {
+    color: black;
+    font-size: 14px;
+}
+
+.LeftHiddenMenu__Logout>svg {
+    color: var(--cold-blue-color);
+    font-size: 24px;
+}
+
+@media only screen and (min-width : 1300px) {
+    .LeftHiddenMenu {
+        left: -100% !important;
+    }
+}
+@media only screen and (max-width : 800px) {
+    .LeftHiddenMenu{
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width : 550px) {
+    .LeftHiddenMenu{
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width : 450px) {
+    .LeftHiddenMenu{
+        width: 70%;
+    }
+}

@@ -5,12 +5,14 @@ import './NFTPage.css'
 import { Context } from '../../Context/ContextProvider';
 
 // start imports componenets ----------------------------------------------------------------------------------------------------------------------------- 
-import LeftMenue from './../../Components/LeftMenue/LeftMenue';
+import LeftMenu from './../../Components/LeftMenu/LeftMenu';
 import RightSideHeader from './../../Components/RightSideHeader/RightSideHeader';
 import TopCreators from './../../Components/TopCreators/TopCreators';
 import History from './../../Components/History/History'
 import TrendNFTs from '../../Components/TrendNFTs/TrendNFTs';
 import LoadingPage from '../../Components/LoadingPage/LoadingPage';
+import SummeryMenu from '../../Components/SummeryMenu/SummeryMenu';
+import LeftHiddenMenu from '../../Components/LeftHiddenMenu/LeftHiddenMenu';
 // end imports componenets ----------------------------------------------------------------------------------------------------------------------------- 
 
 export default function NFTPage() {
@@ -50,7 +52,10 @@ export default function NFTPage() {
           ""
       }
 
-      <LeftMenue></LeftMenue>
+      <LeftMenu></LeftMenu>
+      <SummeryMenu></SummeryMenu>
+
+      {contextUser.isOpenHiddenMenu ? <LeftHiddenMenu style={{ left: "0" }}></LeftHiddenMenu> : <LeftHiddenMenu style={{ left: "-100%" }}></LeftHiddenMenu>}
 
       <div className={`NFTPage__Right-Side`}>
 

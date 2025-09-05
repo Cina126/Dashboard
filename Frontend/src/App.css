@@ -1,12 +1,55 @@
-:root{
-    --warm-blue-color : oklch(93% 0.034 272.788);
-    --cold-blue-color : oklch(48.8% 0.243 264.376);
-    --box-color : white;
-    --green-color : oklch(79.2% 0.209 151.711);
-    --gray-color : oklch(86.9% 0.022 252.894);
+:root {
+    --warm-blue-color: oklch(93% 0.034 272.788);
+    --cold-blue-color: oklch(48.8% 0.243 264.376);
+    --box-color: white;
+    --green-color: oklch(79.2% 0.209 151.711);
+    --gray-color: oklch(86.9% 0.022 252.894);
+    --dashboard-page-row-gap: calc(2*1vw);
+    --nft-page-row-gap: calc((2*69*80*1vw)/(100*100))
 }
-*{
+
+* {
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     user-select: none;
+    direction: ltr;
+}
+
+.swal-red-btn {
+    background-color: red !important;
+    color: white;
+}
+
+.swal-red-btn:hover {
+    background-color: red !important;
+}
+
+@media only screen and (max-width : 800px) {
+    .swal-modal {
+        width: 400px;
+    }
+
+    .swal-title {
+        font-size: 20px;
+    }
+
+    .swal-button-container>button {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width : 500px) {
+    .swal-modal {
+        width: 300px;
+        height: 250px;
+    }
+
+    .swal-title {
+        font-size: 16px;
+    }
+
+    .swal-button-container>button {
+        padding: 5px 15px;
+        font-size: 12px;
+    }
 }
